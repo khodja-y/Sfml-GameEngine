@@ -11,7 +11,14 @@
 class PlayerHue : public Entity
 {
     public:
-                        PlayerHue(const TextureHolder& textures);
+        enum Type
+        {
+            Hue,
+            TypeCount
+        };
+
+    public:
+                        PlayerHue(Type type, const TextureHolder& textures);
                         PlayerHue();
                         ~PlayerHue();
         void            jump();
@@ -24,6 +31,7 @@ class PlayerHue : public Entity
         virtual unsigned int    getCategory() const;
 
     private:
+        Type            mType;
         sf::Sprite      mSprite;
 
 };

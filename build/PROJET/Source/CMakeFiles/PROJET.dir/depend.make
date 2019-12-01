@@ -54,8 +54,20 @@ PROJET/Source/CMakeFiles/PROJET.dir/Container.cpp.o: ../PROJET/Source/../Include
 PROJET/Source/CMakeFiles/PROJET.dir/Container.cpp.o: ../PROJET/Source/../Include/Book/Container.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Container.cpp.o: ../PROJET/Source/Container.cpp
 
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/Category.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/Command.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/CommandQueue.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/DataTables.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/Entity.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/Pickup.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/PlayerHue.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/SceneNode.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/DataTables.cpp
+
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: ../PROJET/Source/../Include/Book/Category.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: ../PROJET/Source/../Include/Book/Command.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: ../PROJET/Source/../Include/Book/CommandQueue.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: ../PROJET/Source/../Include/Book/Entity.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: ../PROJET/Source/../Include/Book/SceneNode.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: ../PROJET/Source/Entity.cpp
@@ -131,6 +143,20 @@ PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: ../PROJET/Source/../Includ
 PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: ../PROJET/Source/../Include/Book/State.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: ../PROJET/Source/../Include/Book/StateIdentifiers.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: ../PROJET/Source/PauseState.cpp
+
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/Category.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/Command.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/CommandQueue.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/DataTables.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/Entity.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/Pickup.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.inl
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/SceneNode.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/Utility.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/Utility.inl
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/Pickup.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o: ../PROJET/Source/../Include/Book/Category.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o: ../PROJET/Source/../Include/Book/Command.hpp

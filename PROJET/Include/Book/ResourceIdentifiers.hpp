@@ -13,12 +13,11 @@ namespace Textures
 {
 	enum ID
 	{
-		Eagle,
-		Raptor,
 		Desert,
 		Hue,
 		Fond,
 		Sol,
+		ColorFill,
 
 		TitleScreen,
 

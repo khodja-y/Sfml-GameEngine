@@ -3,7 +3,7 @@
 
 
 #include <Book/SceneNode.hpp>
-
+#include <Book/CommandQueue.hpp>
 
 class Entity : public SceneNode
 {
@@ -22,15 +22,16 @@ class Entity : public SceneNode
         void				repair(int points);
 		void				damage(int points);
 		void				destroy();
-		virtual void		remove();
+		//virtual void		remove();
 		virtual bool		isDestroyed() const;
 
     protected:
+        virtual void        updateCurrent(sf::Time dt, CommandQueue& commands);
         virtual void        updateCurrent(sf::Time dt);
 
     private:
         sf::Vector2f    mVelocity;
-        //int             mHitPoints;
+        int             mHitPoints;
 
     
 };

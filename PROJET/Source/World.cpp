@@ -95,7 +95,7 @@ void World::buildScene()
 
     
     
-    std::unique_ptr<PlayerHue> leader(new PlayerHue(mTextures));
+    std::unique_ptr<PlayerHue> leader(new PlayerHue(PlayerHue::Hue, mTextures));
     mPlayerHue = leader.get();
     mPlayerHue->setPosition(mSpawnPosition.x, mSpawnPosition.y + 190.f);
     mPlayerHue->setVelocity(0.f, 0.f);

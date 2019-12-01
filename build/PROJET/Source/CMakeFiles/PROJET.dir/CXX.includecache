@@ -76,8 +76,22 @@ vector
 memory
 -
 
+../PROJET/Source/../Include/Book/DataTables.hpp
+Book/ResourceIdentifiers.hpp
+-
+SFML/System/Time.hpp
+-
+SFML/Graphics/Color.hpp
+-
+vector
+-
+functional
+-
+
 ../PROJET/Source/../Include/Book/Entity.hpp
 Book/SceneNode.hpp
+-
+Book/CommandQueue.hpp
 -
 
 ../PROJET/Source/../Include/Book/Game.hpp
@@ -150,6 +164,16 @@ Book/State.hpp
 SFML/Graphics/Sprite.hpp
 -
 SFML/Graphics/Text.hpp
+-
+
+../PROJET/Source/../Include/Book/Pickup.hpp
+Book/Entity.hpp
+-
+Book/Command.hpp
+-
+Book/ResourceIdentifiers.hpp
+-
+SFML/Graphics/Sprite.hpp
 -
 
 ../PROJET/Source/../Include/Book/Player.hpp
@@ -376,8 +400,18 @@ SFML/Graphics/RenderStates.hpp
 SFML/Graphics/RenderTarget.hpp
 -
 
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/DataTables.cpp
+Book/DataTables.hpp
+-
+Book/PlayerHue.hpp
+-
+Book/Pickup.hpp
+-
+
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Entity.cpp
 Book/Entity.hpp
+-
+cassert
 -
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Game.cpp
@@ -440,6 +474,22 @@ SFML/Graphics/RectangleShape.hpp
 SFML/Graphics/RenderWindow.hpp
 -
 SFML/Graphics/View.hpp
+-
+
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Pickup.cpp
+Book/Pickup.hpp
+-
+Book/DataTables.hpp
+-
+Book/Category.hpp
+-
+Book/CommandQueue.hpp
+-
+Book/Utility.hpp
+-
+Book/ResourceHolder.hpp
+-
+SFML/Graphics/RenderTarget.hpp
 -
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Player.cpp
