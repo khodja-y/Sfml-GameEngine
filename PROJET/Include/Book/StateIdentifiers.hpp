@@ -11,6 +11,8 @@ namespace States
         Title,
         Menu,
         Pause,
+        Loading,
+        Settings,
         StateCount,
     };
 }

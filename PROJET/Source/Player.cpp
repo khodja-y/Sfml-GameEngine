@@ -97,6 +97,7 @@ void Player::initializeActions()
 
 	mActionBinding[MoveLeft].action	 = derivedAction<PlayerHue>(PlayerHueMover(-playerSpeed, 0.f));
 	mActionBinding[MoveRight].action = derivedAction<PlayerHue>(PlayerHueMover( playerSpeed, 0.f));
+	mActionBinding[Jump].action = derivedAction<PlayerHue>(PlayerHueMover( 0.f, -playerSpeed));
 
 
 	//mActionBinding[Jump].action    	 = derivedAction<PlayerHue>([] (PlayerHue& h, sf::Time){ h.jump();});

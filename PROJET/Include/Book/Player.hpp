@@ -17,7 +17,9 @@ class Player
 		{
 			MoveLeft,
 			MoveRight,
+
 			Jump,
+			
 			ActionCount
 		};
 

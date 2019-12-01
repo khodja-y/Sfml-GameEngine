@@ -39,17 +39,17 @@ void World::update(sf::Time dt)
 {
 
     //camera qui suit le perso
-    mWorldView.setCenter(mPlayerHue->getPosition().x, mPlayerHue->getPosition().y - 50.f);
+    mWorldView.setCenter(mPlayerHue->getPosition().x + 60.f, mPlayerHue->getPosition().y - 50.f);
     mPlayerHue->setVelocity(0.f, 0.f);
 
 
     //forward commands to the scene graphe
     while(!mCommandQueue.isEmpty())
         mSceneGraph.onCommand(mCommandQueue.pop(), dt);
-    adaptPlayerVelocity();
 
     mSceneGraph.update(dt);
     adaptPlayerPosition();
+    adaptViewPosition();
         
 }
 
@@ -117,7 +117,7 @@ CommandQueue& World::getCommandQueue()
 void World::adaptPlayerPosition()
 {
 	// Keep player's position inside the screen bounds, at least borderDistance units from the border
-	sf::FloatRect viewBounds(mWorldView.getCenter() - mWorldView.getSize() / 2.f, mWorldView.getSize());
+	sf::FloatRect viewBounds(mWorldBounds);
 	const float borderDistance = 40.f;
 
 	sf::Vector2f position = mPlayerHue->getPosition();
@@ -126,6 +126,24 @@ void World::adaptPlayerPosition()
 	position.y = std::max(position.y, viewBounds.top + borderDistance);
 	position.y = std::min(position.y, viewBounds.top + viewBounds.height - borderDistance);
 	mPlayerHue->setPosition(position);
+
+
+}
+
+void World::adaptViewPosition()
+{
+
+	sf::FloatRect viewBounds(mWorldBounds);
+	const float borderDistance = 160.f;
+
+	sf::Vector2f position = mWorldView.getCenter();
+	position.x = std::max(position.x, viewBounds.left + borderDistance);
+	position.x = std::min(position.x, viewBounds.left + viewBounds.width - borderDistance);
+	// position.y = std::max(position.y, viewBounds.top + borderDistance);
+	// position.y = std::min(position.y, viewBounds.top + viewBounds.height - borderDistance);
+	mWorldView.setCenter(position);
+
+
 }
 
 void World::adaptPlayerVelocity()

@@ -3,12 +3,18 @@
 
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o
  ../PROJET/Source/../Include/Book/Application.hpp
+ ../PROJET/Source/../Include/Book/Button.hpp
  ../PROJET/Source/../Include/Book/Category.hpp
  ../PROJET/Source/../Include/Book/Command.hpp
  ../PROJET/Source/../Include/Book/CommandQueue.hpp
+ ../PROJET/Source/../Include/Book/Component.hpp
+ ../PROJET/Source/../Include/Book/Container.hpp
  ../PROJET/Source/../Include/Book/Entity.hpp
  ../PROJET/Source/../Include/Book/GameState.hpp
+ ../PROJET/Source/../Include/Book/Label.hpp
+ ../PROJET/Source/../Include/Book/LoadingState.hpp
  ../PROJET/Source/../Include/Book/MenuState.hpp
+ ../PROJET/Source/../Include/Book/ParallelTask.hpp
  ../PROJET/Source/../Include/Book/PauseState.hpp
  ../PROJET/Source/../Include/Book/Player.hpp
  ../PROJET/Source/../Include/Book/PlayerHue.hpp
@@ -16,6 +22,7 @@ PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o
  ../PROJET/Source/../Include/Book/ResourceHolder.inl
  ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
  ../PROJET/Source/../Include/Book/SceneNode.hpp
+ ../PROJET/Source/../Include/Book/SettingsState.hpp
  ../PROJET/Source/../Include/Book/SpriteNode.hpp
  ../PROJET/Source/../Include/Book/State.hpp
  ../PROJET/Source/../Include/Book/StateIdentifiers.hpp
@@ -23,6 +30,13 @@ PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o
  ../PROJET/Source/../Include/Book/TitleState.hpp
  ../PROJET/Source/../Include/Book/World.hpp
  /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Application.cpp
+PROJET/Source/CMakeFiles/PROJET.dir/Button.cpp.o
+ ../PROJET/Source/../Include/Book/Button.hpp
+ ../PROJET/Source/../Include/Book/Component.hpp
+ ../PROJET/Source/../Include/Book/ResourceHolder.hpp
+ ../PROJET/Source/../Include/Book/ResourceHolder.inl
+ ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
+ /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Button.cpp
 PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o
  ../PROJET/Source/../Include/Book/Category.hpp
  ../PROJET/Source/../Include/Book/Command.hpp
@@ -33,6 +47,13 @@ PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.o
  ../PROJET/Source/../Include/Book/CommandQueue.hpp
  ../PROJET/Source/../Include/Book/SceneNode.hpp
  /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/CommandQueue.cpp
+PROJET/Source/CMakeFiles/PROJET.dir/Component.cpp.o
+ ../PROJET/Source/../Include/Book/Component.hpp
+ /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Component.cpp
+PROJET/Source/CMakeFiles/PROJET.dir/Container.cpp.o
+ ../PROJET/Source/../Include/Book/Component.hpp
+ ../PROJET/Source/../Include/Book/Container.hpp
+ /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Container.cpp
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o
  ../PROJET/Source/../Include/Book/Category.hpp
  ../PROJET/Source/../Include/Book/Command.hpp
@@ -73,7 +94,26 @@ PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o
  ../PROJET/Source/../Include/Book/StateIdentifiers.hpp
  ../PROJET/Source/../Include/Book/World.hpp
  /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/GameState.cpp
+PROJET/Source/CMakeFiles/PROJET.dir/Label.cpp.o
+ ../PROJET/Source/../Include/Book/Component.hpp
+ ../PROJET/Source/../Include/Book/Label.hpp
+ ../PROJET/Source/../Include/Book/ResourceHolder.hpp
+ ../PROJET/Source/../Include/Book/ResourceHolder.inl
+ ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
+ /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Label.cpp
+PROJET/Source/CMakeFiles/PROJET.dir/LoadingState.cpp.o
+ ../PROJET/Source/../Include/Book/LoadingState.hpp
+ ../PROJET/Source/../Include/Book/ParallelTask.hpp
+ ../PROJET/Source/../Include/Book/ResourceHolder.hpp
+ ../PROJET/Source/../Include/Book/ResourceHolder.inl
+ ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
+ ../PROJET/Source/../Include/Book/State.hpp
+ ../PROJET/Source/../Include/Book/StateIdentifiers.hpp
+ /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/LoadingState.cpp
 PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o
+ ../PROJET/Source/../Include/Book/Button.hpp
+ ../PROJET/Source/../Include/Book/Component.hpp
+ ../PROJET/Source/../Include/Book/Container.hpp
  ../PROJET/Source/../Include/Book/MenuState.hpp
  ../PROJET/Source/../Include/Book/ResourceHolder.hpp
  ../PROJET/Source/../Include/Book/ResourceHolder.inl
@@ -81,6 +121,9 @@ PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o
  ../PROJET/Source/../Include/Book/State.hpp
  ../PROJET/Source/../Include/Book/StateIdentifiers.hpp
  /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/MenuState.cpp
+PROJET/Source/CMakeFiles/PROJET.dir/ParallelTask.cpp.o
+ ../PROJET/Source/../Include/Book/ParallelTask.hpp
+ /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/ParallelTask.cpp
 PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o
  ../PROJET/Source/../Include/Book/PauseState.hpp
  ../PROJET/Source/../Include/Book/ResourceHolder.hpp
@@ -115,6 +158,23 @@ PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o
  ../PROJET/Source/../Include/Book/Command.hpp
  ../PROJET/Source/../Include/Book/SceneNode.hpp
  /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SceneNode.cpp
+PROJET/Source/CMakeFiles/PROJET.dir/SettingsState.cpp.o
+ ../PROJET/Source/../Include/Book/Button.hpp
+ ../PROJET/Source/../Include/Book/Category.hpp
+ ../PROJET/Source/../Include/Book/Command.hpp
+ ../PROJET/Source/../Include/Book/Component.hpp
+ ../PROJET/Source/../Include/Book/Container.hpp
+ ../PROJET/Source/../Include/Book/Label.hpp
+ ../PROJET/Source/../Include/Book/Player.hpp
+ ../PROJET/Source/../Include/Book/ResourceHolder.hpp
+ ../PROJET/Source/../Include/Book/ResourceHolder.inl
+ ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
+ ../PROJET/Source/../Include/Book/SettingsState.hpp
+ ../PROJET/Source/../Include/Book/State.hpp
+ ../PROJET/Source/../Include/Book/StateIdentifiers.hpp
+ ../PROJET/Source/../Include/Book/Utility.hpp
+ ../PROJET/Source/../Include/Book/Utility.inl
+ /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SettingsState.cpp
 PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o
  ../PROJET/Source/../Include/Book/Category.hpp
  ../PROJET/Source/../Include/Book/Command.hpp
@@ -141,6 +201,10 @@ PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o
  ../PROJET/Source/../Include/Book/StateIdentifiers.hpp
  ../PROJET/Source/../Include/Book/TitleState.hpp
  /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/TitleState.cpp
+PROJET/Source/CMakeFiles/PROJET.dir/Utility.cpp.o
+ ../PROJET/Source/../Include/Book/Utility.hpp
+ ../PROJET/Source/../Include/Book/Utility.inl
+ /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Utility.cpp
 PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o
  ../PROJET/Source/../Include/Book/Category.hpp
  ../PROJET/Source/../Include/Book/Command.hpp

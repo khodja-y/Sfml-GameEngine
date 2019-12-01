@@ -37,6 +37,7 @@ class World : private sf::NonCopyable
 
             void        adaptPlayerPosition();
             void	adaptPlayerVelocity();
+            void        adaptViewPosition();
       
     private:
             enum Layer

@@ -19,7 +19,12 @@ namespace Textures
 		Hue,
 		Fond,
 		Sol,
+
 		TitleScreen,
+
+		ButtonNormal,
+		ButtonSelected,
+		ButtonPressed
 	};
 }
 

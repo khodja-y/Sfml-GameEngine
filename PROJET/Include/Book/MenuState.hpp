@@ -2,6 +2,7 @@
 #define MENUSTATE_HPP
 
 #include <Book/State.hpp>
+#include <Book/Container.hpp>
 
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Text.hpp>
@@ -33,6 +34,8 @@ class MenuState : public State
 
 		std::vector<sf::Text>	mOptions;
 		std::size_t				mOptionIndex;
+
+		GUI::Container			mGUIContainer;
 };
 
 #endif // MENUSTATE_HPP
