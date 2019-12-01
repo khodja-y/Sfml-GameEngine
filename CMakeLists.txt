@@ -30,7 +30,7 @@ elseif(CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
 	
 	# Mac OS X: clang uses libc++ standard library
 	if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
-		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
+		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -stdlib=libc++")
 	endif()
 endif()
 

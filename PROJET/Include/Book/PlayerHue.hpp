@@ -12,6 +12,8 @@ class PlayerHue : public Entity
 {
     public:
                         PlayerHue(const TextureHolder& textures);
+                        PlayerHue();
+                        ~PlayerHue();
         void            jump();
         
         virtual void    drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const;

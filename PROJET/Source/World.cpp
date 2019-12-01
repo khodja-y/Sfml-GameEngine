@@ -29,6 +29,12 @@ World::World(sf::RenderWindow& window)
     mWorldView.setSize(320.f, 240.f);
 }
 
+
+World::~World()
+{
+	
+}
+
 void World::update(sf::Time dt)
 {
 

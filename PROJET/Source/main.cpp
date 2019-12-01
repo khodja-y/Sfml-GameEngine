@@ -25,13 +25,15 @@ int main(){
 
 
     try{
-        Game game;
+        Application game;
         game.run();
     }
     catch (std::exception& e)
     {
         std::cout << "\Exception : " << e.what() << std::endl;
     }
+
+    return 0;
     
 }
 

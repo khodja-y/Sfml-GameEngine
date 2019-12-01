@@ -1,4 +1,4 @@
-# Install script for directory: /home/yasmine/Bureau/Bureau/SecondTryOrganised
+# Install script for directory: /home/yasmine/Bureau/Sfml-GameEngine-Hue
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source/cmake_install.cmake")
+  include("/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

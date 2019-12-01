@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp
+Change Dir: /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_58f3b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_58f3b.dir/build.make CMakeFiles/cmTC_58f3b.dir/build
-make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_58f3b.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_58f3b.dir/testCCompiler.c.o   -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_58f3b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58f3b.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_58f3b.dir/testCCompiler.c.o  -o cmTC_58f3b -rdynamic 
-make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_68166/fast"
+/usr/bin/make -f CMakeFiles/cmTC_68166.dir/build.make CMakeFiles/cmTC_68166.dir/build
+make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_68166.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_68166.dir/testCCompiler.c.o   -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_68166
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68166.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_68166.dir/testCCompiler.c.o  -o cmTC_68166 -rdynamic 
+make[1] : on quitte le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp
+Change Dir: /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_40462/fast"
-/usr/bin/make -f CMakeFiles/cmTC_40462.dir/build.make CMakeFiles/cmTC_40462.dir/build
-make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_40462.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_40462.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_40462
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40462.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_40462.dir/CMakeCCompilerABI.c.o  -o cmTC_40462 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_34168/fast"
+/usr/bin/make -f CMakeFiles/cmTC_34168.dir/build.make CMakeFiles/cmTC_34168.dir/build
+make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_34168.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_34168.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_34168
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34168.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_34168.dir/CMakeCCompilerABI.c.o  -o cmTC_34168 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_40462' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5M17Ca.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_40462 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_40462.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_34168' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMKG5fU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_34168 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_34168.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1] : on quitte le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_40462/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_40462.dir/build.make CMakeFiles/cmTC_40462.dir/build]
-  ignore line: [make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »]
-  ignore line: [Building C object CMakeFiles/cmTC_40462.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_40462.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_40462]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40462.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_40462.dir/CMakeCCompilerABI.c.o  -o cmTC_40462 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_34168/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_34168.dir/build.make CMakeFiles/cmTC_34168.dir/build]
+  ignore line: [make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »]
+  ignore line: [Building C object CMakeFiles/cmTC_34168.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_34168.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_34168]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34168.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_34168.dir/CMakeCCompilerABI.c.o  -o cmTC_34168 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_40462' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5M17Ca.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_40462 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_40462.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_34168' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMKG5fU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_34168 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_34168.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc5M17Ca.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccMKG5fU.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -109,7 +109,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_40462] ==> ignore
+    arg [cmTC_34168] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -121,7 +121,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_40462.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_34168.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -153,17 +153,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp
+Change Dir: /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b51f9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b51f9.dir/build.make CMakeFiles/cmTC_b51f9.dir/build
-make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_b51f9.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_b51f9.dir/feature_tests.c.o   -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_b51f9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b51f9.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_b51f9.dir/feature_tests.c.o  -o cmTC_b51f9 -rdynamic 
-make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_a11f5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a11f5.dir/build.make CMakeFiles/cmTC_a11f5.dir/build
+make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_a11f5.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_a11f5.dir/feature_tests.c.o   -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_a11f5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a11f5.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_a11f5.dir/feature_tests.c.o  -o cmTC_a11f5 -rdynamic 
+make[1] : on quitte le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -173,17 +173,17 @@ make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrg
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp
+Change Dir: /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b77ba/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b77ba.dir/build.make CMakeFiles/cmTC_b77ba.dir/build
-make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_b77ba.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_b77ba.dir/feature_tests.c.o   -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_b77ba
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b77ba.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_b77ba.dir/feature_tests.c.o  -o cmTC_b77ba -rdynamic 
-make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_f7492/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f7492.dir/build.make CMakeFiles/cmTC_f7492.dir/build
+make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_f7492.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_f7492.dir/feature_tests.c.o   -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_f7492
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7492.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_f7492.dir/feature_tests.c.o  -o cmTC_f7492 -rdynamic 
+make[1] : on quitte le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -193,17 +193,17 @@ make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrg
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp
+Change Dir: /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cad8b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cad8b.dir/build.make CMakeFiles/cmTC_cad8b.dir/build
-make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_cad8b.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_cad8b.dir/feature_tests.c.o   -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_cad8b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cad8b.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_cad8b.dir/feature_tests.c.o  -o cmTC_cad8b -rdynamic 
-make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_4775d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4775d.dir/build.make CMakeFiles/cmTC_4775d.dir/build
+make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_4775d.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_4775d.dir/feature_tests.c.o   -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_4775d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4775d.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_4775d.dir/feature_tests.c.o  -o cmTC_4775d -rdynamic 
+make[1] : on quitte le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -211,30 +211,30 @@ make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrg
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp
+Change Dir: /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b4eb9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b4eb9.dir/build.make CMakeFiles/cmTC_b4eb9.dir/build
-make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_b4eb9.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_b4eb9.dir/testCXXCompiler.cxx.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_b4eb9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4eb9.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_b4eb9.dir/testCXXCompiler.cxx.o  -o cmTC_b4eb9 -rdynamic 
-make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_1ae35/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1ae35.dir/build.make CMakeFiles/cmTC_1ae35.dir/build
+make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_1ae35.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_1ae35.dir/testCXXCompiler.cxx.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_1ae35
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ae35.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_1ae35.dir/testCXXCompiler.cxx.o  -o cmTC_1ae35 -rdynamic 
+make[1] : on quitte le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp
+Change Dir: /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1b3ce/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1b3ce.dir/build.make CMakeFiles/cmTC_1b3ce.dir/build
-make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_1b3ce.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_1b3ce.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_1b3ce
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b3ce.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_1b3ce.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_1b3ce -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_92dac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_92dac.dir/build.make CMakeFiles/cmTC_92dac.dir/build
+make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_92dac.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_92dac.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_92dac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92dac.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_92dac.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_92dac -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -244,23 +244,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1b3ce' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccB8QMit.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1b3ce /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1b3ce.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_92dac' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjud5Jc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_92dac /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_92dac.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1] : on quitte le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1b3ce/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1b3ce.dir/build.make CMakeFiles/cmTC_1b3ce.dir/build]
-  ignore line: [make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »]
-  ignore line: [Building CXX object CMakeFiles/cmTC_1b3ce.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_1b3ce.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_1b3ce]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b3ce.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_1b3ce.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_1b3ce -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_92dac/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_92dac.dir/build.make CMakeFiles/cmTC_92dac.dir/build]
+  ignore line: [make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »]
+  ignore line: [Building CXX object CMakeFiles/cmTC_92dac.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_92dac.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_92dac]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92dac.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_92dac.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_92dac -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -270,13 +270,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1b3ce' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccB8QMit.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1b3ce /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1b3ce.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_92dac' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjud5Jc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_92dac /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_92dac.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccB8QMit.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccjud5Jc.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -294,7 +294,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_1b3ce] ==> ignore
+    arg [cmTC_92dac] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -306,7 +306,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_1b3ce.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_92dac.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -336,17 +336,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp
+Change Dir: /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cf07d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cf07d.dir/build.make CMakeFiles/cmTC_cf07d.dir/build
-make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_cf07d.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_cf07d.dir/feature_tests.cxx.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_cf07d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf07d.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_cf07d.dir/feature_tests.cxx.o  -o cmTC_cf07d -rdynamic 
-make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_e2a20/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e2a20.dir/build.make CMakeFiles/cmTC_e2a20.dir/build
+make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_e2a20.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_e2a20.dir/feature_tests.cxx.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_e2a20
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2a20.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_e2a20.dir/feature_tests.cxx.o  -o cmTC_e2a20 -rdynamic 
+make[1] : on quitte le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -409,17 +409,17 @@ make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrg
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp
+Change Dir: /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cc36c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cc36c.dir/build.make CMakeFiles/cmTC_cc36c.dir/build
-make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_cc36c.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_cc36c.dir/feature_tests.cxx.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_cc36c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc36c.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_cc36c.dir/feature_tests.cxx.o  -o cmTC_cc36c -rdynamic 
-make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_cbea1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cbea1.dir/build.make CMakeFiles/cmTC_cbea1.dir/build
+make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_cbea1.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_cbea1.dir/feature_tests.cxx.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_cbea1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbea1.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_cbea1.dir/feature_tests.cxx.o  -o cmTC_cbea1 -rdynamic 
+make[1] : on quitte le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -482,17 +482,17 @@ make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrg
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp
+Change Dir: /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1cff0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1cff0.dir/build.make CMakeFiles/cmTC_1cff0.dir/build
-make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_1cff0.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_1cff0.dir/feature_tests.cxx.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_1cff0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cff0.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_1cff0.dir/feature_tests.cxx.o  -o cmTC_1cff0 -rdynamic 
-make[1] : on quitte le répertoire « /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles/CMakeTmp »
+Run Build Command:"/usr/bin/make" "cmTC_666f4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_666f4.dir/build.make CMakeFiles/cmTC_666f4.dir/build
+make[1] : on entre dans le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_666f4.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_666f4.dir/feature_tests.cxx.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_666f4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_666f4.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_666f4.dir/feature_tests.cxx.o  -o cmTC_666f4 -rdynamic 
+make[1] : on quitte le répertoire « /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles/CMakeTmp »
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

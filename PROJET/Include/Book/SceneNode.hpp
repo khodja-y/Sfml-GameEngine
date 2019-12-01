@@ -24,6 +24,7 @@ class SceneNode : public sf::Transformable, public sf::Drawable, private sf::Non
 
     public:
                         SceneNode();
+                        ~SceneNode();
 
         void            attachChild(Ptr child);
         Ptr             detachChild(const SceneNode& node);

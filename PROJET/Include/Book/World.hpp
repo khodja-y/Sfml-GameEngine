@@ -25,6 +25,7 @@ class World : private sf::NonCopyable
 {
     public:
             explicit            World(sf::RenderWindow& window);
+                                ~World();
             void                update(sf::Time dt);
             void                draw();
 

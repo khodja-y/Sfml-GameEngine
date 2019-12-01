@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yasmine/Bureau/Bureau/SecondTryOrganised
+CMAKE_SOURCE_DIR = /home/yasmine/Bureau/Sfml-GameEngine-Hue
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yasmine/Bureau/Bureau/SecondTryOrganised/build
+CMAKE_BINARY_DIR = /home/yasmine/Bureau/Sfml-GameEngine-Hue/build
 
 # Include any dependencies generated for this target.
 include PROJET/Source/CMakeFiles/PROJET.dir/depend.make
@@ -59,16 +59,16 @@ include PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/main.cpp.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/main.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/main.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/main.cpp.i"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/main.cpp > CMakeFiles/PROJET.dir/main.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/main.cpp > CMakeFiles/PROJET.dir/main.cpp.i
 
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/main.cpp.s"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/main.cpp -o CMakeFiles/PROJET.dir/main.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/main.cpp -o CMakeFiles/PROJET.dir/main.cpp.s
 
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o.provides.build: PROJET/Source/CMa
 
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: ../PROJET/Source/Entity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/Entity.cpp.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/Entity.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Entity.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/Entity.cpp.i"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Entity.cpp > CMakeFiles/PROJET.dir/Entity.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Entity.cpp > CMakeFiles/PROJET.dir/Entity.cpp.i
 
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/Entity.cpp.s"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Entity.cpp -o CMakeFiles/PROJET.dir/Entity.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Entity.cpp -o CMakeFiles/PROJET.dir/Entity.cpp.s
 
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o.requires:
 
@@ -105,18 +105,42 @@ PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o.provides: PROJET/Source/CMakeFi
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o
 
 
+PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
+PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o: ../PROJET/Source/State.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/State.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/State.cpp
+
+PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/State.cpp.i"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/State.cpp > CMakeFiles/PROJET.dir/State.cpp.i
+
+PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/State.cpp.s"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/State.cpp -o CMakeFiles/PROJET.dir/State.cpp.s
+
+PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o.requires:
+
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o.requires
+
+PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o.provides: PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o.requires
+	$(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o.provides.build
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o.provides
+
+PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o
+
+
 PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o: ../PROJET/Source/PlayerHue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/PlayerHue.cpp.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/PlayerHue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/PlayerHue.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/PlayerHue.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/PlayerHue.cpp.i"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/PlayerHue.cpp > CMakeFiles/PROJET.dir/PlayerHue.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/PlayerHue.cpp > CMakeFiles/PROJET.dir/PlayerHue.cpp.i
 
 PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/PlayerHue.cpp.s"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/PlayerHue.cpp -o CMakeFiles/PROJET.dir/PlayerHue.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/PlayerHue.cpp -o CMakeFiles/PROJET.dir/PlayerHue.cpp.s
 
 PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o.requires:
 
@@ -131,16 +155,16 @@ PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o.provides.build: PROJET/Sourc
 
 PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/Game.cpp.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/Game.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Game.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/Game.cpp.i"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Game.cpp > CMakeFiles/PROJET.dir/Game.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Game.cpp > CMakeFiles/PROJET.dir/Game.cpp.i
 
 PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/Game.cpp.s"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Game.cpp -o CMakeFiles/PROJET.dir/Game.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Game.cpp -o CMakeFiles/PROJET.dir/Game.cpp.s
 
 PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o.requires:
 
@@ -153,18 +177,66 @@ PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o.provides: PROJET/Source/CMakeFile
 PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o
 
 
+PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
+PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o: ../PROJET/Source/GameState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/GameState.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/GameState.cpp
+
+PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/GameState.cpp.i"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/GameState.cpp > CMakeFiles/PROJET.dir/GameState.cpp.i
+
+PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/GameState.cpp.s"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/GameState.cpp -o CMakeFiles/PROJET.dir/GameState.cpp.s
+
+PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o.requires:
+
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o.requires
+
+PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o.provides: PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o.requires
+	$(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o.provides.build
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o.provides
+
+PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o
+
+
+PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
+PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: ../PROJET/Source/PauseState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/PauseState.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/PauseState.cpp
+
+PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/PauseState.cpp.i"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/PauseState.cpp > CMakeFiles/PROJET.dir/PauseState.cpp.i
+
+PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/PauseState.cpp.s"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/PauseState.cpp -o CMakeFiles/PROJET.dir/PauseState.cpp.s
+
+PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o.requires:
+
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o.requires
+
+PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o.provides: PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o.requires
+	$(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o.provides.build
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o.provides
+
+PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o
+
+
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/Application.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/Application.cpp.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/Application.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Application.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/Application.cpp.i"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Application.cpp > CMakeFiles/PROJET.dir/Application.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Application.cpp > CMakeFiles/PROJET.dir/Application.cpp.i
 
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/Application.cpp.s"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Application.cpp -o CMakeFiles/PROJET.dir/Application.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Application.cpp -o CMakeFiles/PROJET.dir/Application.cpp.s
 
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o.requires:
 
@@ -179,16 +251,16 @@ PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o.provides.build: PROJET/Sou
 
 PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o: ../PROJET/Source/World.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/World.cpp.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/World.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/World.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/World.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/World.cpp.i"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/World.cpp > CMakeFiles/PROJET.dir/World.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/World.cpp > CMakeFiles/PROJET.dir/World.cpp.i
 
 PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/World.cpp.s"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/World.cpp -o CMakeFiles/PROJET.dir/World.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/World.cpp -o CMakeFiles/PROJET.dir/World.cpp.s
 
 PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o.requires:
 
@@ -201,18 +273,42 @@ PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o.provides: PROJET/Source/CMakeFil
 PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o
 
 
+PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
+PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o: ../PROJET/Source/MenuState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/MenuState.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/MenuState.cpp
+
+PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/MenuState.cpp.i"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/MenuState.cpp > CMakeFiles/PROJET.dir/MenuState.cpp.i
+
+PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/MenuState.cpp.s"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/MenuState.cpp -o CMakeFiles/PROJET.dir/MenuState.cpp.s
+
+PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o.requires:
+
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o.requires
+
+PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o.provides: PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o.requires
+	$(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o.provides.build
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o.provides
+
+PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o
+
+
 PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o: ../PROJET/Source/SceneNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/SceneNode.cpp.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/SceneNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/SceneNode.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SceneNode.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/SceneNode.cpp.i"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/SceneNode.cpp > CMakeFiles/PROJET.dir/SceneNode.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SceneNode.cpp > CMakeFiles/PROJET.dir/SceneNode.cpp.i
 
 PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/SceneNode.cpp.s"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/SceneNode.cpp -o CMakeFiles/PROJET.dir/SceneNode.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SceneNode.cpp -o CMakeFiles/PROJET.dir/SceneNode.cpp.s
 
 PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o.requires:
 
@@ -225,18 +321,42 @@ PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o.provides: PROJET/Source/CMak
 PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o
 
 
+PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
+PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o: ../PROJET/Source/TitleState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/TitleState.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/TitleState.cpp
+
+PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/TitleState.cpp.i"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/TitleState.cpp > CMakeFiles/PROJET.dir/TitleState.cpp.i
+
+PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/TitleState.cpp.s"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/TitleState.cpp -o CMakeFiles/PROJET.dir/TitleState.cpp.s
+
+PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o.requires:
+
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o.requires
+
+PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o.provides: PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o.requires
+	$(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o.provides.build
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o.provides
+
+PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o
+
+
 PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.o: ../PROJET/Source/CommandQueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.o"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/CommandQueue.cpp.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/CommandQueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/CommandQueue.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/CommandQueue.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/CommandQueue.cpp.i"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/CommandQueue.cpp > CMakeFiles/PROJET.dir/CommandQueue.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/CommandQueue.cpp > CMakeFiles/PROJET.dir/CommandQueue.cpp.i
 
 PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/CommandQueue.cpp.s"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/CommandQueue.cpp -o CMakeFiles/PROJET.dir/CommandQueue.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/CommandQueue.cpp -o CMakeFiles/PROJET.dir/CommandQueue.cpp.s
 
 PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.o.requires:
 
@@ -251,16 +371,16 @@ PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.o.provides.build: PROJET/So
 
 PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o: ../PROJET/Source/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/Player.cpp.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/Player.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Player.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/Player.cpp.i"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Player.cpp > CMakeFiles/PROJET.dir/Player.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Player.cpp > CMakeFiles/PROJET.dir/Player.cpp.i
 
 PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/Player.cpp.s"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Player.cpp -o CMakeFiles/PROJET.dir/Player.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Player.cpp -o CMakeFiles/PROJET.dir/Player.cpp.s
 
 PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o.requires:
 
@@ -273,18 +393,42 @@ PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o.provides: PROJET/Source/CMakeFi
 PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o
 
 
+PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
+PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o: ../PROJET/Source/StateStack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/StateStack.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/StateStack.cpp
+
+PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/StateStack.cpp.i"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/StateStack.cpp > CMakeFiles/PROJET.dir/StateStack.cpp.i
+
+PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/StateStack.cpp.s"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/StateStack.cpp -o CMakeFiles/PROJET.dir/StateStack.cpp.s
+
+PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o.requires:
+
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o.requires
+
+PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o.provides: PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o.requires
+	$(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o.provides.build
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o.provides
+
+PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o
+
+
 PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o: ../PROJET/Source/SpriteNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/SpriteNode.cpp.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/SpriteNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/SpriteNode.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SpriteNode.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/SpriteNode.cpp.i"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/SpriteNode.cpp > CMakeFiles/PROJET.dir/SpriteNode.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SpriteNode.cpp > CMakeFiles/PROJET.dir/SpriteNode.cpp.i
 
 PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/SpriteNode.cpp.s"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/SpriteNode.cpp -o CMakeFiles/PROJET.dir/SpriteNode.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SpriteNode.cpp -o CMakeFiles/PROJET.dir/SpriteNode.cpp.s
 
 PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o.requires:
 
@@ -299,16 +443,16 @@ PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o.provides.build: PROJET/Sour
 
 PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o: ../PROJET/Source/Command.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/Command.cpp.o -c /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Command.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/Command.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Command.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/Command.cpp.i"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Command.cpp > CMakeFiles/PROJET.dir/Command.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Command.cpp > CMakeFiles/PROJET.dir/Command.cpp.i
 
 PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/Command.cpp.s"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/Command.cpp -o CMakeFiles/PROJET.dir/Command.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Command.cpp -o CMakeFiles/PROJET.dir/Command.cpp.s
 
 PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o.requires:
 
@@ -325,13 +469,19 @@ PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o.provides.build: PROJET/Source/
 PROJET_OBJECTS = \
 "CMakeFiles/PROJET.dir/main.cpp.o" \
 "CMakeFiles/PROJET.dir/Entity.cpp.o" \
+"CMakeFiles/PROJET.dir/State.cpp.o" \
 "CMakeFiles/PROJET.dir/PlayerHue.cpp.o" \
 "CMakeFiles/PROJET.dir/Game.cpp.o" \
+"CMakeFiles/PROJET.dir/GameState.cpp.o" \
+"CMakeFiles/PROJET.dir/PauseState.cpp.o" \
 "CMakeFiles/PROJET.dir/Application.cpp.o" \
 "CMakeFiles/PROJET.dir/World.cpp.o" \
+"CMakeFiles/PROJET.dir/MenuState.cpp.o" \
 "CMakeFiles/PROJET.dir/SceneNode.cpp.o" \
+"CMakeFiles/PROJET.dir/TitleState.cpp.o" \
 "CMakeFiles/PROJET.dir/CommandQueue.cpp.o" \
 "CMakeFiles/PROJET.dir/Player.cpp.o" \
+"CMakeFiles/PROJET.dir/StateStack.cpp.o" \
 "CMakeFiles/PROJET.dir/SpriteNode.cpp.o" \
 "CMakeFiles/PROJET.dir/Command.cpp.o"
 
@@ -340,13 +490,19 @@ PROJET_EXTERNAL_OBJECTS =
 
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o
+PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o
+PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o
+PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o
+PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o
+PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o
+PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/build.make
@@ -356,8 +512,8 @@ PROJET/Source/PROJET: /usr/lib/x86_64-linux-gnu/libsfml-window.so
 PROJET/Source/PROJET: /usr/lib/x86_64-linux-gnu/libsfml-system.so
 PROJET/Source/PROJET: /usr/lib/x86_64-linux-gnu/libsfml-network.so
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable PROJET"
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PROJET.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable PROJET"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PROJET.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 PROJET/Source/CMakeFiles/PROJET.dir/build: PROJET/Source/PROJET
@@ -366,23 +522,29 @@ PROJET/Source/CMakeFiles/PROJET.dir/build: PROJET/Source/PROJET
 
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o.requires
+PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o.requires
+PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o.requires
+PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o.requires
+PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o.requires
+PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o.requires
+PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o.requires
 
 .PHONY : PROJET/Source/CMakeFiles/PROJET.dir/requires
 
 PROJET/Source/CMakeFiles/PROJET.dir/clean:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source && $(CMAKE_COMMAND) -P CMakeFiles/PROJET.dir/cmake_clean.cmake
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && $(CMAKE_COMMAND) -P CMakeFiles/PROJET.dir/cmake_clean.cmake
 .PHONY : PROJET/Source/CMakeFiles/PROJET.dir/clean
 
 PROJET/Source/CMakeFiles/PROJET.dir/depend:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yasmine/Bureau/Bureau/SecondTryOrganised /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source /home/yasmine/Bureau/Bureau/SecondTryOrganised/build /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source/CMakeFiles/PROJET.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yasmine/Bureau/Sfml-GameEngine-Hue /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source /home/yasmine/Bureau/Sfml-GameEngine-Hue/build /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source/CMakeFiles/PROJET.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : PROJET/Source/CMakeFiles/PROJET.dir/depend
 

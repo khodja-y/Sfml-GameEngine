@@ -2,6 +2,15 @@
 
 #include <SFML/Graphics.hpp>
 
+SpriteNode::SpriteNode()
+{
+
+}
+
+SpriteNode::~SpriteNode()
+{
+	
+}
 
 SpriteNode::SpriteNode(const sf::Texture& texture)
 : mSprite(texture)

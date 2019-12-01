@@ -11,6 +11,11 @@ SceneNode::SceneNode()
 
 }
 
+SceneNode::~SceneNode()
+{
+    
+}
+
 void SceneNode::attachChild(Ptr child)
 {
 

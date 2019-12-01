@@ -2,7 +2,15 @@
 
 #include <Book/Entity.hpp>
 
+Entity::Entity()
+{
 
+}
+
+Entity::~Entity()
+{
+	
+}
 
 void Entity::setVelocity(sf::Vector2f velocity){
 

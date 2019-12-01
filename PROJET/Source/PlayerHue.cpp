@@ -5,7 +5,15 @@
 #include <SFML/Graphics/RenderTarget.hpp>
 #include <SFML/Graphics/RenderStates.hpp>
 
+PlayerHue::PlayerHue()
+{
 
+}
+
+PlayerHue::~PlayerHue()
+{
+	
+}
 
 PlayerHue::PlayerHue(const TextureHolder& textures) 
 : mSprite(textures.get(Textures::Hue))

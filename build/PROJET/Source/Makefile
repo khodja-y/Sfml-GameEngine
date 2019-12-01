@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yasmine/Bureau/Bureau/SecondTryOrganised
+CMAKE_SOURCE_DIR = /home/yasmine/Bureau/Sfml-GameEngine-Hue
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yasmine/Bureau/Bureau/SecondTryOrganised/build
+CMAKE_BINARY_DIR = /home/yasmine/Bureau/Sfml-GameEngine-Hue/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source/CMakeFiles/progress.marks
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f CMakeFiles/Makefile2 PROJET/Source/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasmine/Bureau/Bureau/SecondTryOrganised/build/CMakeFiles 0
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source/CMakeFiles/progress.marks
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f CMakeFiles/Makefile2 PROJET/Source/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f CMakeFiles/Makefile2 PROJET/Source/clean
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f CMakeFiles/Makefile2 PROJET/Source/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f CMakeFiles/Makefile2 PROJET/Source/preinstall
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f CMakeFiles/Makefile2 PROJET/Source/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f CMakeFiles/Makefile2 PROJET/Source/preinstall
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f CMakeFiles/Makefile2 PROJET/Source/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 PROJET/Source/CMakeFiles/PROJET.dir/rule:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f CMakeFiles/Makefile2 PROJET/Source/CMakeFiles/PROJET.dir/rule
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f CMakeFiles/Makefile2 PROJET/Source/CMakeFiles/PROJET.dir/rule
 .PHONY : PROJET/Source/CMakeFiles/PROJET.dir/rule
 
 # Convenience name for target.
@@ -166,7 +166,7 @@ PROJET: PROJET/Source/CMakeFiles/PROJET.dir/rule
 
 # fast build rule for target.
 PROJET/fast:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/build
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/build
 .PHONY : PROJET/fast
 
 Application.o: Application.cpp.o
@@ -175,7 +175,7 @@ Application.o: Application.cpp.o
 
 # target to build an object file
 Application.cpp.o:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o
 .PHONY : Application.cpp.o
 
 Application.i: Application.cpp.i
@@ -184,7 +184,7 @@ Application.i: Application.cpp.i
 
 # target to preprocess a source file
 Application.cpp.i:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.i
 .PHONY : Application.cpp.i
 
 Application.s: Application.cpp.s
@@ -193,7 +193,7 @@ Application.s: Application.cpp.s
 
 # target to generate assembly for a file
 Application.cpp.s:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.s
 .PHONY : Application.cpp.s
 
 Command.o: Command.cpp.o
@@ -202,7 +202,7 @@ Command.o: Command.cpp.o
 
 # target to build an object file
 Command.cpp.o:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o
 .PHONY : Command.cpp.o
 
 Command.i: Command.cpp.i
@@ -211,7 +211,7 @@ Command.i: Command.cpp.i
 
 # target to preprocess a source file
 Command.cpp.i:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.i
 .PHONY : Command.cpp.i
 
 Command.s: Command.cpp.s
@@ -220,7 +220,7 @@ Command.s: Command.cpp.s
 
 # target to generate assembly for a file
 Command.cpp.s:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.s
 .PHONY : Command.cpp.s
 
 CommandQueue.o: CommandQueue.cpp.o
@@ -229,7 +229,7 @@ CommandQueue.o: CommandQueue.cpp.o
 
 # target to build an object file
 CommandQueue.cpp.o:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.o
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.o
 .PHONY : CommandQueue.cpp.o
 
 CommandQueue.i: CommandQueue.cpp.i
@@ -238,7 +238,7 @@ CommandQueue.i: CommandQueue.cpp.i
 
 # target to preprocess a source file
 CommandQueue.cpp.i:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.i
 .PHONY : CommandQueue.cpp.i
 
 CommandQueue.s: CommandQueue.cpp.s
@@ -247,7 +247,7 @@ CommandQueue.s: CommandQueue.cpp.s
 
 # target to generate assembly for a file
 CommandQueue.cpp.s:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/CommandQueue.cpp.s
 .PHONY : CommandQueue.cpp.s
 
 Entity.o: Entity.cpp.o
@@ -256,7 +256,7 @@ Entity.o: Entity.cpp.o
 
 # target to build an object file
 Entity.cpp.o:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o
 .PHONY : Entity.cpp.o
 
 Entity.i: Entity.cpp.i
@@ -265,7 +265,7 @@ Entity.i: Entity.cpp.i
 
 # target to preprocess a source file
 Entity.cpp.i:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.i
 .PHONY : Entity.cpp.i
 
 Entity.s: Entity.cpp.s
@@ -274,7 +274,7 @@ Entity.s: Entity.cpp.s
 
 # target to generate assembly for a file
 Entity.cpp.s:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.s
 .PHONY : Entity.cpp.s
 
 Game.o: Game.cpp.o
@@ -283,7 +283,7 @@ Game.o: Game.cpp.o
 
 # target to build an object file
 Game.cpp.o:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o
 .PHONY : Game.cpp.o
 
 Game.i: Game.cpp.i
@@ -292,7 +292,7 @@ Game.i: Game.cpp.i
 
 # target to preprocess a source file
 Game.cpp.i:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.i
 .PHONY : Game.cpp.i
 
 Game.s: Game.cpp.s
@@ -301,8 +301,89 @@ Game.s: Game.cpp.s
 
 # target to generate assembly for a file
 Game.cpp.s:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.s
 .PHONY : Game.cpp.s
+
+GameState.o: GameState.cpp.o
+
+.PHONY : GameState.o
+
+# target to build an object file
+GameState.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o
+.PHONY : GameState.cpp.o
+
+GameState.i: GameState.cpp.i
+
+.PHONY : GameState.i
+
+# target to preprocess a source file
+GameState.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.i
+.PHONY : GameState.cpp.i
+
+GameState.s: GameState.cpp.s
+
+.PHONY : GameState.s
+
+# target to generate assembly for a file
+GameState.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.s
+.PHONY : GameState.cpp.s
+
+MenuState.o: MenuState.cpp.o
+
+.PHONY : MenuState.o
+
+# target to build an object file
+MenuState.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.o
+.PHONY : MenuState.cpp.o
+
+MenuState.i: MenuState.cpp.i
+
+.PHONY : MenuState.i
+
+# target to preprocess a source file
+MenuState.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.i
+.PHONY : MenuState.cpp.i
+
+MenuState.s: MenuState.cpp.s
+
+.PHONY : MenuState.s
+
+# target to generate assembly for a file
+MenuState.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.s
+.PHONY : MenuState.cpp.s
+
+PauseState.o: PauseState.cpp.o
+
+.PHONY : PauseState.o
+
+# target to build an object file
+PauseState.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o
+.PHONY : PauseState.cpp.o
+
+PauseState.i: PauseState.cpp.i
+
+.PHONY : PauseState.i
+
+# target to preprocess a source file
+PauseState.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.i
+.PHONY : PauseState.cpp.i
+
+PauseState.s: PauseState.cpp.s
+
+.PHONY : PauseState.s
+
+# target to generate assembly for a file
+PauseState.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.s
+.PHONY : PauseState.cpp.s
 
 Player.o: Player.cpp.o
 
@@ -310,7 +391,7 @@ Player.o: Player.cpp.o
 
 # target to build an object file
 Player.cpp.o:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o
 .PHONY : Player.cpp.o
 
 Player.i: Player.cpp.i
@@ -319,7 +400,7 @@ Player.i: Player.cpp.i
 
 # target to preprocess a source file
 Player.cpp.i:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.i
 .PHONY : Player.cpp.i
 
 Player.s: Player.cpp.s
@@ -328,7 +409,7 @@ Player.s: Player.cpp.s
 
 # target to generate assembly for a file
 Player.cpp.s:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.s
 .PHONY : Player.cpp.s
 
 PlayerHue.o: PlayerHue.cpp.o
@@ -337,7 +418,7 @@ PlayerHue.o: PlayerHue.cpp.o
 
 # target to build an object file
 PlayerHue.cpp.o:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o
 .PHONY : PlayerHue.cpp.o
 
 PlayerHue.i: PlayerHue.cpp.i
@@ -346,7 +427,7 @@ PlayerHue.i: PlayerHue.cpp.i
 
 # target to preprocess a source file
 PlayerHue.cpp.i:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.i
 .PHONY : PlayerHue.cpp.i
 
 PlayerHue.s: PlayerHue.cpp.s
@@ -355,7 +436,7 @@ PlayerHue.s: PlayerHue.cpp.s
 
 # target to generate assembly for a file
 PlayerHue.cpp.s:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.s
 .PHONY : PlayerHue.cpp.s
 
 SceneNode.o: SceneNode.cpp.o
@@ -364,7 +445,7 @@ SceneNode.o: SceneNode.cpp.o
 
 # target to build an object file
 SceneNode.cpp.o:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o
 .PHONY : SceneNode.cpp.o
 
 SceneNode.i: SceneNode.cpp.i
@@ -373,7 +454,7 @@ SceneNode.i: SceneNode.cpp.i
 
 # target to preprocess a source file
 SceneNode.cpp.i:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.i
 .PHONY : SceneNode.cpp.i
 
 SceneNode.s: SceneNode.cpp.s
@@ -382,7 +463,7 @@ SceneNode.s: SceneNode.cpp.s
 
 # target to generate assembly for a file
 SceneNode.cpp.s:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.s
 .PHONY : SceneNode.cpp.s
 
 SpriteNode.o: SpriteNode.cpp.o
@@ -391,7 +472,7 @@ SpriteNode.o: SpriteNode.cpp.o
 
 # target to build an object file
 SpriteNode.cpp.o:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o
 .PHONY : SpriteNode.cpp.o
 
 SpriteNode.i: SpriteNode.cpp.i
@@ -400,7 +481,7 @@ SpriteNode.i: SpriteNode.cpp.i
 
 # target to preprocess a source file
 SpriteNode.cpp.i:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.i
 .PHONY : SpriteNode.cpp.i
 
 SpriteNode.s: SpriteNode.cpp.s
@@ -409,8 +490,89 @@ SpriteNode.s: SpriteNode.cpp.s
 
 # target to generate assembly for a file
 SpriteNode.cpp.s:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.s
 .PHONY : SpriteNode.cpp.s
+
+State.o: State.cpp.o
+
+.PHONY : State.o
+
+# target to build an object file
+State.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.o
+.PHONY : State.cpp.o
+
+State.i: State.cpp.i
+
+.PHONY : State.i
+
+# target to preprocess a source file
+State.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.i
+.PHONY : State.cpp.i
+
+State.s: State.cpp.s
+
+.PHONY : State.s
+
+# target to generate assembly for a file
+State.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/State.cpp.s
+.PHONY : State.cpp.s
+
+StateStack.o: StateStack.cpp.o
+
+.PHONY : StateStack.o
+
+# target to build an object file
+StateStack.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o
+.PHONY : StateStack.cpp.o
+
+StateStack.i: StateStack.cpp.i
+
+.PHONY : StateStack.i
+
+# target to preprocess a source file
+StateStack.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.i
+.PHONY : StateStack.cpp.i
+
+StateStack.s: StateStack.cpp.s
+
+.PHONY : StateStack.s
+
+# target to generate assembly for a file
+StateStack.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.s
+.PHONY : StateStack.cpp.s
+
+TitleState.o: TitleState.cpp.o
+
+.PHONY : TitleState.o
+
+# target to build an object file
+TitleState.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.o
+.PHONY : TitleState.cpp.o
+
+TitleState.i: TitleState.cpp.i
+
+.PHONY : TitleState.i
+
+# target to preprocess a source file
+TitleState.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.i
+.PHONY : TitleState.cpp.i
+
+TitleState.s: TitleState.cpp.s
+
+.PHONY : TitleState.s
+
+# target to generate assembly for a file
+TitleState.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/TitleState.cpp.s
+.PHONY : TitleState.cpp.s
 
 World.o: World.cpp.o
 
@@ -418,7 +580,7 @@ World.o: World.cpp.o
 
 # target to build an object file
 World.cpp.o:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o
 .PHONY : World.cpp.o
 
 World.i: World.cpp.i
@@ -427,7 +589,7 @@ World.i: World.cpp.i
 
 # target to preprocess a source file
 World.cpp.i:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.i
 .PHONY : World.cpp.i
 
 World.s: World.cpp.s
@@ -436,7 +598,7 @@ World.s: World.cpp.s
 
 # target to generate assembly for a file
 World.cpp.s:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.s
 .PHONY : World.cpp.s
 
 main.o: main.cpp.o
@@ -445,7 +607,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -454,7 +616,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.i
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -463,7 +625,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.s
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -494,6 +656,15 @@ help:
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
+	@echo "... GameState.o"
+	@echo "... GameState.i"
+	@echo "... GameState.s"
+	@echo "... MenuState.o"
+	@echo "... MenuState.i"
+	@echo "... MenuState.s"
+	@echo "... PauseState.o"
+	@echo "... PauseState.i"
+	@echo "... PauseState.s"
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
@@ -506,6 +677,15 @@ help:
 	@echo "... SpriteNode.o"
 	@echo "... SpriteNode.i"
 	@echo "... SpriteNode.s"
+	@echo "... State.o"
+	@echo "... State.i"
+	@echo "... State.s"
+	@echo "... StateStack.o"
+	@echo "... StateStack.i"
+	@echo "... StateStack.s"
+	@echo "... TitleState.o"
+	@echo "... TitleState.i"
+	@echo "... TitleState.s"
 	@echo "... World.o"
 	@echo "... World.i"
 	@echo "... World.s"
@@ -523,6 +703,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yasmine/Bureau/Bureau/SecondTryOrganised/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

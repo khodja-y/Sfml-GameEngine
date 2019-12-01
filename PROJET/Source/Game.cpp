@@ -14,25 +14,13 @@
 #include <Book/Game.hpp>
 #include <Book/StringHelpers.hpp>
 
-// #include "ResourceHolder.hpp"
 
-
-
-
-
-// namespace Textures
-// {
-// 	enum ID
-// 	{
-// 		PlayerHue,
-// 	};
-// }
 
 const float Game::PlayerSpeed = 200.f;
 const sf::Time Game::TimePerFrame = sf::seconds(1.f/60.f);
 
 Game::Game()
-: mWindow(sf::VideoMode(640, 480), "SFML Application", sf::Style::Default)
+: mWindow(sf::VideoMode(640, 480), "SFML Application", sf::Style::Close)
 , mWorld(mWindow)
 , mTexture()
 , mPlayer()
@@ -51,7 +39,12 @@ Game::Game()
 
 	//This can avoid graphical artifacts such as screen tearing, where a part of your
 	//window shows the old frame, and another the new one.
-	mWindow.setVerticalSyncEnabled(true);
+	//mWindow.setVerticalSyncEnabled(true);
+}
+
+Game::~Game()
+{
+	
 }
 
 void Game::run()

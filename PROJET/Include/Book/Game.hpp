@@ -13,6 +13,7 @@ class Game : private sf::NonCopyable
 {
 	public:
 								Game();
+								~Game();
 		void					run();
 		
 

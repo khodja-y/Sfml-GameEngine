@@ -1,4 +1,4 @@
-# Install script for directory: /home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source
+# Install script for directory: /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/PROJET/PROJET"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/PROJET" TYPE EXECUTABLE FILES "/home/yasmine/Bureau/Bureau/SecondTryOrganised/build/PROJET/Source/PROJET")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/PROJET" TYPE EXECUTABLE FILES "/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source/PROJET")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/PROJET/PROJET" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/PROJET/PROJET")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -49,6 +49,6 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/PROJET" TYPE DIRECTORY FILES "/home/yasmine/Bureau/Bureau/SecondTryOrganised/PROJET/Source/../Media" REGEX "/CMakeLists\\.txt$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/PROJET" TYPE DIRECTORY FILES "/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/../Media" REGEX "/CMakeLists\\.txt$" EXCLUDE)
 endif()
 
