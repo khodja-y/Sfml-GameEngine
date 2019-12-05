@@ -95,16 +95,6 @@ Book/CommandQueue.hpp
 -
 
 ../PROJET/Source/../Include/Book/Game.hpp
-SFML/Graphics.hpp
--
-SFML/Window.hpp
--
-SFML/System.hpp
--
-Book/World.hpp
--
-Book/Player.hpp
--
 
 ../PROJET/Source/../Include/Book/GameState.hpp
 Book/State.hpp
@@ -215,29 +205,23 @@ ResourceHolder.inl
 ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
 
 ../PROJET/Source/../Include/Book/SceneNode.hpp
-iostream
+SFML/System/NonCopyable.hpp
 -
-map
+SFML/System/Time.hpp
 -
-string
+SFML/Graphics/Transformable.hpp
 -
-memory
--
-stdexcept
--
-vector
--
-cassert
--
-algorithm
--
-SFML/Graphics.hpp
--
-SFML/System.hpp
+SFML/Graphics/Drawable.hpp
 -
 Book/Category.hpp
 -
-Book/Command.hpp
+vector
+-
+set
+-
+memory
+-
+utility
 -
 
 ../PROJET/Source/../Include/Book/SettingsState.hpp
@@ -298,14 +282,6 @@ functional
 map
 -
 
-../PROJET/Source/../Include/Book/StringHelpers.hpp
-sstream
--
-StringHelpers.inl
-../PROJET/Source/../Include/Book/StringHelpers.inl
-
-../PROJET/Source/../Include/Book/StringHelpers.inl
-
 ../PROJET/Source/../Include/Book/TitleState.hpp
 Book/State.hpp
 -
@@ -316,6 +292,8 @@ SFML/Graphics/Text.hpp
 
 ../PROJET/Source/../Include/Book/Utility.hpp
 SFML/Window/Keyboard.hpp
+-
+SFML/System/Vector2.hpp
 -
 sstream
 -
@@ -336,6 +314,8 @@ Book/SceneNode.hpp
 Book/ResourceIdentifiers.hpp
 -
 Book/CommandQueue.hpp
+-
+Book/Pickup.hpp
 -
 array
 -
@@ -415,16 +395,6 @@ cassert
 -
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Game.cpp
-iostream
--
-cmath
--
-functional
--
-Book/Game.hpp
--
-Book/StringHelpers.hpp
--
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/GameState.cpp
 Book/GameState.hpp
@@ -521,9 +491,19 @@ SFML/Graphics/RenderStates.hpp
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SceneNode.cpp
 Book/SceneNode.hpp
 -
+Book/Utility.hpp
+-
+Book/Command.hpp
+-
+SFML/Graphics/RectangleShape.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
 algorithm
 -
 cassert
+-
+cmath
 -
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SettingsState.cpp
@@ -573,7 +553,13 @@ SFML/Graphics/Sprite.hpp
 -
 SFML/Graphics/Text.hpp
 -
+random
+-
 cmath
+-
+ctime
+-
+cassert
 -
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/World.cpp

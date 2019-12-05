@@ -8,12 +8,15 @@
 #include <Book/SceneNode.hpp>
 #include <Book/ResourceIdentifiers.hpp>
 #include <Book/CommandQueue.hpp>
+#include <Book/Pickup.hpp>
+#include <Book/State.hpp>
 
 #include <array>
 #include <queue>
 
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
+
 
 
 namespace sf
@@ -24,7 +27,7 @@ namespace sf
 class World : private sf::NonCopyable
 {
     public:
-            explicit            World(sf::RenderWindow& window);
+            explicit            World(sf::RenderWindow& window, FontHolder& fonts);
                                 ~World();
             void                update(sf::Time dt);
             void                draw();
@@ -32,12 +35,14 @@ class World : private sf::NonCopyable
             CommandQueue&       getCommandQueue();
 
     private:
-            void            loadTextures();
-            void            buildScene();
+            void                loadTextures();
+            void                buildScene();
 
-            void        adaptPlayerPosition();
-            void	adaptPlayerVelocity();
-            void        adaptViewPosition();
+            void                adaptPlayerPosition();
+            void	        adaptPlayerVelocity();
+            void                adaptViewPosition();
+
+            void		handleCollisions();
       
     private:
             enum Layer
@@ -52,6 +57,7 @@ class World : private sf::NonCopyable
             sf::RenderWindow&   mWindow;
             sf::View            mWorldView;
             TextureHolder       mTextures;
+            FontHolder&		mFonts;
 
             //scene
             SceneNode						mSceneGraph;

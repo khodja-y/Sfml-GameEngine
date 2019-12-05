@@ -29,6 +29,7 @@ class PlayerHue : public Entity
         void            handleRealtimeInput(CommandQueue& commands);
         
         virtual unsigned int    getCategory() const;
+        sf::FloatRect           getBoundingRect() const;
 
     private:
         Type            mType;

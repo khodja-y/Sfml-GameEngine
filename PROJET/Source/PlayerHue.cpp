@@ -21,7 +21,7 @@ PlayerHue::PlayerHue(Type type, const TextureHolder& textures)
 {
     sf::FloatRect bounds = mSprite.getGlobalBounds();
     mSprite.setOrigin(bounds.width / 2.f, bounds.height / 2.f);
-    mSprite.setScale(0.1, 0.1);
+    mSprite.setScale(0.3, 0.3);
 }
 
 void PlayerHue::drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const
@@ -43,5 +43,10 @@ void PlayerHue::jump(){
 unsigned int PlayerHue::getCategory() const
 {
     return Category::PlayerHue;
+}
+
+sf::FloatRect PlayerHue::getBoundingRect() const
+{
+    return getWorldTransform().transformRect(mSprite.getGlobalBounds());
 }
 

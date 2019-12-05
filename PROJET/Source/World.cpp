@@ -10,7 +10,7 @@
 
 
 
-World::World(sf::RenderWindow& window)
+World::World(sf::RenderWindow& window, FontHolder& fonts)
 : mWindow(window)
 , mWorldView(window.getDefaultView())
 , mWorldBounds(0.f,                           //x
@@ -21,12 +21,13 @@ World::World(sf::RenderWindow& window)
 , mScrollSpeed(50.f)                        
 , mPlayerHue(nullptr)
 , mCommandQueue()
+, mFonts(fonts)
 {
     loadTextures();
     buildScene();
 
     mWorldView.setCenter(mSpawnPosition);
-    mWorldView.setSize(320.f, 240.f);
+    // mWorldView.setSize(320.f, 240.f);
 }
 
 
@@ -46,6 +47,12 @@ void World::update(sf::Time dt)
     //forward commands to the scene graphe
     while(!mCommandQueue.isEmpty())
         mSceneGraph.onCommand(mCommandQueue.pop(), dt);
+
+    // Collision detection and response (may destroy entities)
+	handleCollisions();
+
+    // Remove all destroyed entities (ennemies si on en met)
+	mSceneGraph.removeWrecks();
 
     mSceneGraph.update(dt);
     adaptPlayerPosition();
@@ -97,7 +104,7 @@ void World::buildScene()
     
     std::unique_ptr<PlayerHue> leader(new PlayerHue(PlayerHue::Hue, mTextures));
     mPlayerHue = leader.get();
-    mPlayerHue->setPosition(mSpawnPosition.x, mSpawnPosition.y + 190.f);
+    mPlayerHue->setPosition(mSpawnPosition.x, mSpawnPosition.y + 140.f);
     mPlayerHue->setVelocity(0.f, 0.f);
     mSceneLayers[Air]->attachChild(std::move(leader));
 
@@ -118,7 +125,7 @@ void World::adaptPlayerPosition()
 {
 	// Keep player's position inside the screen bounds, at least borderDistance units from the border
 	sf::FloatRect viewBounds(mWorldBounds);
-	const float borderDistance = 40.f;
+	const float borderDistance = 60.f;
 
 	sf::Vector2f position = mPlayerHue->getPosition();
 	position.x = std::max(position.x, viewBounds.left + borderDistance);
@@ -134,7 +141,7 @@ void World::adaptViewPosition()
 {
 
 	sf::FloatRect viewBounds(mWorldBounds);
-	const float borderDistance = 160.f;
+	const float borderDistance = 320.f;
 
 	sf::Vector2f position = mWorldView.getCenter();
 	position.x = std::max(position.x, viewBounds.left + borderDistance);
@@ -156,5 +163,69 @@ void World::adaptPlayerVelocity()
 
 	// Add scrolling velocity
 	mPlayerHue->marcher(velocity.x, 0.f);
+}
+
+bool matchesCategories(SceneNode::Pair& colliders, Category::Type type1, Category::Type type2)
+{
+	unsigned int category1 = colliders.first->getCategory();
+	unsigned int category2 = colliders.second->getCategory();
+
+	// Make sure first pair entry has category type1 and second has type2
+	if (type1 & category1 && type2 & category2)
+	{
+		return true;
+	}
+	else if (type1 & category2 && type2 & category1)
+	{
+		std::swap(colliders.first, colliders.second);
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+void World::handleCollisions()
+{
+	std::set<SceneNode::Pair> collisionPairs;
+	mSceneGraph.checkSceneCollision(mSceneGraph, collisionPairs);
+
+	for(SceneNode::Pair pair : collisionPairs)
+	{
+        // SI LE PLAYER TOUCHE UN ENNEMIE DIRECT
+		// if (matchesCategories(pair, Category::PlayerAircraft, Category::EnemyAircraft))
+		// {
+		// 	auto& player = static_cast<Aircraft&>(*pair.first);
+		// 	auto& enemy = static_cast<Aircraft&>(*pair.second);
+
+		// 	// Collision: Player damage = enemy's remaining HP
+		// 	player.damage(enemy.getHitpoints());
+		// 	enemy.destroy();
+		// }
+
+		// else 
+        if (matchesCategories(pair, Category::PlayerHue, Category::Pickup))
+		{
+			auto& player = static_cast<PlayerHue&>(*pair.first);
+			auto& pickup = static_cast<Pickup&>(*pair.second);
+
+			// Apply pickup effect to player, destroy projectile AJOUT DE LA COULEUR DANS SA PALETTE
+			pickup.apply(player);
+			pickup.destroy();
+		}
+
+        // PAREIL POUR LES ENNEMIES
+		// else if (matchesCategories(pair, Category::EnemyAircraft, Category::AlliedProjectile)
+		// 	  || matchesCategories(pair, Category::PlayerAircraft, Category::EnemyProjectile))
+		// {
+		// 	auto& aircraft = static_cast<Aircraft&>(*pair.first);
+		// 	auto& projectile = static_cast<Projectile&>(*pair.second);
+
+		// 	// Apply projectile damage to aircraft, destroy projectile
+		// 	aircraft.damage(projectile.getDamage());
+		// 	projectile.destroy();
+		// }
+	}
 }
 
