@@ -331,6 +331,33 @@ Container.cpp.s:
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Container.cpp.s
 .PHONY : Container.cpp.s
 
+DataTables.o: DataTables.cpp.o
+
+.PHONY : DataTables.o
+
+# target to build an object file
+DataTables.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o
+.PHONY : DataTables.cpp.o
+
+DataTables.i: DataTables.cpp.i
+
+.PHONY : DataTables.i
+
+# target to preprocess a source file
+DataTables.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.i
+.PHONY : DataTables.cpp.i
+
+DataTables.s: DataTables.cpp.s
+
+.PHONY : DataTables.s
+
+# target to generate assembly for a file
+DataTables.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.s
+.PHONY : DataTables.cpp.s
+
 Entity.o: Entity.cpp.o
 
 .PHONY : Entity.o
@@ -546,6 +573,33 @@ PauseState.s: PauseState.cpp.s
 PauseState.cpp.s:
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.s
 .PHONY : PauseState.cpp.s
+
+Pickup.o: Pickup.cpp.o
+
+.PHONY : Pickup.o
+
+# target to build an object file
+Pickup.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o
+.PHONY : Pickup.cpp.o
+
+Pickup.i: Pickup.cpp.i
+
+.PHONY : Pickup.i
+
+# target to preprocess a source file
+Pickup.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.i
+.PHONY : Pickup.cpp.i
+
+Pickup.s: Pickup.cpp.s
+
+.PHONY : Pickup.s
+
+# target to generate assembly for a file
+Pickup.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.s
+.PHONY : Pickup.cpp.s
 
 Player.o: Player.cpp.o
 
@@ -875,6 +929,9 @@ help:
 	@echo "... Container.o"
 	@echo "... Container.i"
 	@echo "... Container.s"
+	@echo "... DataTables.o"
+	@echo "... DataTables.i"
+	@echo "... DataTables.s"
 	@echo "... Entity.o"
 	@echo "... Entity.i"
 	@echo "... Entity.s"
@@ -899,6 +956,9 @@ help:
 	@echo "... PauseState.o"
 	@echo "... PauseState.i"
 	@echo "... PauseState.s"
+	@echo "... Pickup.o"
+	@echo "... Pickup.i"
+	@echo "... Pickup.s"
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"

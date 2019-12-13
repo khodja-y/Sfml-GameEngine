@@ -11,7 +11,14 @@
 class PlayerHue : public Entity
 {
     public:
-                        PlayerHue(const TextureHolder& textures);
+        enum Type
+        {
+            Hue,
+            TypeCount
+        };
+
+    public:
+                        PlayerHue(Type type, const TextureHolder& textures);
                         PlayerHue();
                         ~PlayerHue();
         void            jump();
@@ -22,8 +29,10 @@ class PlayerHue : public Entity
         void            handleRealtimeInput(CommandQueue& commands);
         
         virtual unsigned int    getCategory() const;
+        sf::FloatRect           getBoundingRect() const;
 
     private:
+        Type            mType;
         sf::Sprite      mSprite;
 
 };

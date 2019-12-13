@@ -3,7 +3,7 @@
 
 
 #include <Book/SceneNode.hpp>
-
+#include <Book/CommandQueue.hpp>
 
 class Entity : public SceneNode
 {
@@ -18,19 +18,29 @@ class Entity : public SceneNode
         void            marcher(float vx, float vy);
         sf::Vector2f    getVelocity() const;
 
+<<<<<<< HEAD
         // int                 getHitPoints() const;
         // void				repair(int points);
 		// void				damage(int points);
 		// void				destroy();
 		// virtual void		remove();
 		// virtual bool		isDestroyed() const;
+=======
+        int                 getHitPoints() const;
+        void				repair(int points);
+		void				damage(int points);
+		void				destroy();
+		//virtual void		remove();
+		virtual bool		isDestroyed() const;
+>>>>>>> master
 
     protected:
+        virtual void        updateCurrent(sf::Time dt, CommandQueue& commands);
         virtual void        updateCurrent(sf::Time dt);
 
     private:
         sf::Vector2f    mVelocity;
-        //int             mHitPoints;
+        int             mHitPoints;
 
     
 };

@@ -15,6 +15,7 @@ PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Inclu
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Include/Book/MenuState.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Include/Book/ParallelTask.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Include/Book/PauseState.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Include/Book/Pickup.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Include/Book/Player.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Include/Book/PlayerHue.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.hpp
@@ -54,27 +55,24 @@ PROJET/Source/CMakeFiles/PROJET.dir/Container.cpp.o: ../PROJET/Source/../Include
 PROJET/Source/CMakeFiles/PROJET.dir/Container.cpp.o: ../PROJET/Source/../Include/Book/Container.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Container.cpp.o: ../PROJET/Source/Container.cpp
 
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/Category.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/Command.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/CommandQueue.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/DataTables.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/Entity.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/Pickup.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/PlayerHue.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/../Include/Book/SceneNode.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/DataTables.cpp
+
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: ../PROJET/Source/../Include/Book/Category.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: ../PROJET/Source/../Include/Book/Command.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: ../PROJET/Source/../Include/Book/CommandQueue.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: ../PROJET/Source/../Include/Book/Entity.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: ../PROJET/Source/../Include/Book/SceneNode.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Entity.cpp.o: ../PROJET/Source/Entity.cpp
 
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/Category.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/Command.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/CommandQueue.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/Entity.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/Game.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/Player.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/PlayerHue.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.inl
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/SceneNode.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/SpriteNode.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/StringHelpers.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/StringHelpers.inl
-PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/../Include/Book/World.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.o: ../PROJET/Source/Game.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o: ../PROJET/Source/../Include/Book/Category.hpp
@@ -82,6 +80,7 @@ PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o: ../PROJET/Source/../Include
 PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o: ../PROJET/Source/../Include/Book/CommandQueue.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o: ../PROJET/Source/../Include/Book/Entity.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o: ../PROJET/Source/../Include/Book/GameState.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o: ../PROJET/Source/../Include/Book/Pickup.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o: ../PROJET/Source/../Include/Book/Player.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o: ../PROJET/Source/../Include/Book/PlayerHue.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/GameState.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.hpp
@@ -132,6 +131,20 @@ PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: ../PROJET/Source/../Includ
 PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: ../PROJET/Source/../Include/Book/StateIdentifiers.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: ../PROJET/Source/PauseState.cpp
 
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/Category.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/Command.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/CommandQueue.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/DataTables.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/Entity.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/Pickup.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.inl
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/SceneNode.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/Utility.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/../Include/Book/Utility.inl
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/Pickup.cpp
+
 PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o: ../PROJET/Source/../Include/Book/Category.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o: ../PROJET/Source/../Include/Book/Command.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o: ../PROJET/Source/../Include/Book/CommandQueue.hpp
@@ -156,6 +169,8 @@ PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o: ../PROJET/Source/PlayerHue.
 PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o: ../PROJET/Source/../Include/Book/Category.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o: ../PROJET/Source/../Include/Book/Command.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o: ../PROJET/Source/../Include/Book/SceneNode.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o: ../PROJET/Source/../Include/Book/Utility.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o: ../PROJET/Source/../Include/Book/Utility.inl
 PROJET/Source/CMakeFiles/PROJET.dir/SceneNode.cpp.o: ../PROJET/Source/SceneNode.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/SettingsState.cpp.o: ../PROJET/Source/../Include/Book/Button.hpp
@@ -176,7 +191,6 @@ PROJET/Source/CMakeFiles/PROJET.dir/SettingsState.cpp.o: ../PROJET/Source/../Inc
 PROJET/Source/CMakeFiles/PROJET.dir/SettingsState.cpp.o: ../PROJET/Source/SettingsState.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o: ../PROJET/Source/../Include/Book/Category.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o: ../PROJET/Source/../Include/Book/Command.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o: ../PROJET/Source/../Include/Book/SceneNode.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o: ../PROJET/Source/../Include/Book/SpriteNode.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o: ../PROJET/Source/SpriteNode.cpp
@@ -209,6 +223,7 @@ PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o: ../PROJET/Source/../Include/Boo
 PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o: ../PROJET/Source/../Include/Book/Command.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o: ../PROJET/Source/../Include/Book/CommandQueue.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o: ../PROJET/Source/../Include/Book/Entity.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o: ../PROJET/Source/../Include/Book/Pickup.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o: ../PROJET/Source/../Include/Book/PlayerHue.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.inl
@@ -221,19 +236,13 @@ PROJET/Source/CMakeFiles/PROJET.dir/World.cpp.o: ../PROJET/Source/World.cpp
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/Application.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/Category.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/Command.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/CommandQueue.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/Entity.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/Game.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/Player.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/PlayerHue.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.inl
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/SceneNode.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/SpriteNode.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/State.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/StateIdentifiers.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/StateStack.hpp
-PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/../Include/Book/World.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/main.cpp.o: ../PROJET/Source/main.cpp
 

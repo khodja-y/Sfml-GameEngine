@@ -76,21 +76,25 @@ vector
 memory
 -
 
+../PROJET/Source/../Include/Book/DataTables.hpp
+Book/ResourceIdentifiers.hpp
+-
+SFML/System/Time.hpp
+-
+SFML/Graphics/Color.hpp
+-
+vector
+-
+functional
+-
+
 ../PROJET/Source/../Include/Book/Entity.hpp
 Book/SceneNode.hpp
 -
+Book/CommandQueue.hpp
+-
 
 ../PROJET/Source/../Include/Book/Game.hpp
-SFML/Graphics.hpp
--
-SFML/Window.hpp
--
-SFML/System.hpp
--
-Book/World.hpp
--
-Book/Player.hpp
--
 
 ../PROJET/Source/../Include/Book/GameState.hpp
 Book/State.hpp
@@ -152,6 +156,16 @@ SFML/Graphics/Sprite.hpp
 SFML/Graphics/Text.hpp
 -
 
+../PROJET/Source/../Include/Book/Pickup.hpp
+Book/Entity.hpp
+-
+Book/Command.hpp
+-
+Book/ResourceIdentifiers.hpp
+-
+SFML/Graphics/Sprite.hpp
+-
+
 ../PROJET/Source/../Include/Book/Player.hpp
 Book/Command.hpp
 -
@@ -191,29 +205,23 @@ ResourceHolder.inl
 ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
 
 ../PROJET/Source/../Include/Book/SceneNode.hpp
-iostream
+SFML/System/NonCopyable.hpp
 -
-map
+SFML/System/Time.hpp
 -
-string
+SFML/Graphics/Transformable.hpp
 -
-memory
--
-stdexcept
--
-vector
--
-cassert
--
-algorithm
--
-SFML/Graphics.hpp
--
-SFML/System.hpp
+SFML/Graphics/Drawable.hpp
 -
 Book/Category.hpp
 -
-Book/Command.hpp
+vector
+-
+set
+-
+memory
+-
+utility
 -
 
 ../PROJET/Source/../Include/Book/SettingsState.hpp
@@ -274,14 +282,6 @@ functional
 map
 -
 
-../PROJET/Source/../Include/Book/StringHelpers.hpp
-sstream
--
-StringHelpers.inl
-../PROJET/Source/../Include/Book/StringHelpers.inl
-
-../PROJET/Source/../Include/Book/StringHelpers.inl
-
 ../PROJET/Source/../Include/Book/TitleState.hpp
 Book/State.hpp
 -
@@ -292,6 +292,8 @@ SFML/Graphics/Text.hpp
 
 ../PROJET/Source/../Include/Book/Utility.hpp
 SFML/Window/Keyboard.hpp
+-
+SFML/System/Vector2.hpp
 -
 sstream
 -
@@ -312,6 +314,8 @@ Book/SceneNode.hpp
 Book/ResourceIdentifiers.hpp
 -
 Book/CommandQueue.hpp
+-
+Book/Pickup.hpp
 -
 array
 -
@@ -376,21 +380,21 @@ SFML/Graphics/RenderStates.hpp
 SFML/Graphics/RenderTarget.hpp
 -
 
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/DataTables.cpp
+Book/DataTables.hpp
+-
+Book/PlayerHue.hpp
+-
+Book/Pickup.hpp
+-
+
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Entity.cpp
 Book/Entity.hpp
 -
+cassert
+-
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Game.cpp
-iostream
--
-cmath
--
-functional
--
-Book/Game.hpp
--
-Book/StringHelpers.hpp
--
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/GameState.cpp
 Book/GameState.hpp
@@ -442,6 +446,22 @@ SFML/Graphics/RenderWindow.hpp
 SFML/Graphics/View.hpp
 -
 
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Pickup.cpp
+Book/Pickup.hpp
+-
+Book/DataTables.hpp
+-
+Book/Category.hpp
+-
+Book/CommandQueue.hpp
+-
+Book/Utility.hpp
+-
+Book/ResourceHolder.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
+
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Player.cpp
 Book/Player.hpp
 -
@@ -471,9 +491,19 @@ SFML/Graphics/RenderStates.hpp
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SceneNode.cpp
 Book/SceneNode.hpp
 -
+Book/Utility.hpp
+-
+Book/Command.hpp
+-
+SFML/Graphics/RectangleShape.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
 algorithm
 -
 cassert
+-
+cmath
 -
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SettingsState.cpp
@@ -523,7 +553,13 @@ SFML/Graphics/Sprite.hpp
 -
 SFML/Graphics/Text.hpp
 -
+random
+-
 cmath
+-
+ctime
+-
+cassert
 -
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/World.cpp

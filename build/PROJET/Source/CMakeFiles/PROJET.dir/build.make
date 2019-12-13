@@ -561,9 +561,33 @@ PROJET/Source/CMakeFiles/PROJET.dir/LoadingState.cpp.o.provides: PROJET/Source/C
 PROJET/Source/CMakeFiles/PROJET.dir/LoadingState.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/LoadingState.cpp.o
 
 
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o: ../PROJET/Source/Pickup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/Pickup.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Pickup.cpp
+
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/Pickup.cpp.i"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Pickup.cpp > CMakeFiles/PROJET.dir/Pickup.cpp.i
+
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/Pickup.cpp.s"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Pickup.cpp -o CMakeFiles/PROJET.dir/Pickup.cpp.s
+
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o.requires:
+
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o.requires
+
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o.provides: PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o.requires
+	$(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o.provides.build
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o.provides
+
+PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o
+
+
 PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o: ../PROJET/Source/StateStack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o"
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/StateStack.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/StateStack.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.i: cmake_force
@@ -585,9 +609,33 @@ PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o.provides: PROJET/Source/CMa
 PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o
 
 
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o: ../PROJET/Source/DataTables.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/DataTables.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/DataTables.cpp
+
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJET.dir/DataTables.cpp.i"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/DataTables.cpp > CMakeFiles/PROJET.dir/DataTables.cpp.i
+
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJET.dir/DataTables.cpp.s"
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/DataTables.cpp -o CMakeFiles/PROJET.dir/DataTables.cpp.s
+
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o.requires:
+
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o.requires
+
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o.provides: PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o.requires
+	$(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o.provides.build
+.PHONY : PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o.provides
+
+PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o.provides.build: PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o
+
+
 PROJET/Source/CMakeFiles/PROJET.dir/ParallelTask.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/ParallelTask.cpp.o: ../PROJET/Source/ParallelTask.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/ParallelTask.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/ParallelTask.cpp.o"
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/ParallelTask.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/ParallelTask.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/ParallelTask.cpp.i: cmake_force
@@ -611,7 +659,7 @@ PROJET/Source/CMakeFiles/PROJET.dir/ParallelTask.cpp.o.provides.build: PROJET/So
 
 PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o: ../PROJET/Source/SpriteNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o"
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/SpriteNode.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SpriteNode.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.i: cmake_force
@@ -635,7 +683,7 @@ PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o.provides.build: PROJET/Sour
 
 PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o: PROJET/Source/CMakeFiles/PROJET.dir/flags.make
 PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o: ../PROJET/Source/Command.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o"
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PROJET.dir/Command.cpp.o -c /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Command.cpp
 
 PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.i: cmake_force
@@ -680,7 +728,9 @@ PROJET_OBJECTS = \
 "CMakeFiles/PROJET.dir/SettingsState.cpp.o" \
 "CMakeFiles/PROJET.dir/Utility.cpp.o" \
 "CMakeFiles/PROJET.dir/LoadingState.cpp.o" \
+"CMakeFiles/PROJET.dir/Pickup.cpp.o" \
 "CMakeFiles/PROJET.dir/StateStack.cpp.o" \
+"CMakeFiles/PROJET.dir/DataTables.cpp.o" \
 "CMakeFiles/PROJET.dir/ParallelTask.cpp.o" \
 "CMakeFiles/PROJET.dir/SpriteNode.cpp.o" \
 "CMakeFiles/PROJET.dir/Command.cpp.o"
@@ -709,7 +759,9 @@ PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/Player.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/SettingsState.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/Utility.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/LoadingState.cpp.o
+PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o
+PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/ParallelTask.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o
@@ -720,7 +772,7 @@ PROJET/Source/PROJET: /usr/lib/x86_64-linux-gnu/libsfml-window.so
 PROJET/Source/PROJET: /usr/lib/x86_64-linux-gnu/libsfml-system.so
 PROJET/Source/PROJET: /usr/lib/x86_64-linux-gnu/libsfml-network.so
 PROJET/Source/PROJET: PROJET/Source/CMakeFiles/PROJET.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable PROJET"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable PROJET"
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/PROJET/Source && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PROJET.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -749,7 +801,9 @@ PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.di
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/SettingsState.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/Utility.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/LoadingState.cpp.o.requires
+PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/Pickup.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.o.requires
+PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/ParallelTask.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/SpriteNode.cpp.o.requires
 PROJET/Source/CMakeFiles/PROJET.dir/requires: PROJET/Source/CMakeFiles/PROJET.dir/Command.cpp.o.requires
