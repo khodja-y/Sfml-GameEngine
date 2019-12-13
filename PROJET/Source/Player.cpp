@@ -93,13 +93,13 @@ sf::Keyboard::Key Player::getAssignedKey(Action action) const
 
 void Player::initializeActions()
 {
-	const float playerSpeed = 100.f;
 
-	mActionBinding[MoveLeft].action	 = derivedAction<PlayerHue>(PlayerHueMover(-playerSpeed, 0.f));
-	mActionBinding[MoveRight].action = derivedAction<PlayerHue>(PlayerHueMover( playerSpeed, 0.f));
-	mActionBinding[Jump].action = derivedAction<PlayerHue>(PlayerHueMover( 0.f, -playerSpeed));
+	sf::Vector2f playerSpeed(100.f, 0.f);
+	// mActionBinding[Jump].action = derivedAction<PlayerHue>(PlayerHueMover( 0.f, -playerSpeed));
 
-
+	mActionBinding[MoveLeft].action    	 = derivedAction<PlayerHue>([playerSpeed] (PlayerHue& h, sf::Time){ h.marcher(-playerSpeed);});
+	mActionBinding[MoveRight].action     = derivedAction<PlayerHue>([playerSpeed] (PlayerHue& h, sf::Time){ h.marcher(playerSpeed);});
+	//mActionBinding[Jump].action    	 = derivedAction<PlayerHue>([] (PlayerHue& h, sf::Time){ h.jump();});
 	//mActionBinding[Jump].action    	 = derivedAction<PlayerHue>([] (PlayerHue& h, sf::Time){ h.jump();});
 }
 

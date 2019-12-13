@@ -42,7 +42,7 @@ void Entity::marcher(sf::Vector2f velocity)
 
 void Entity::marcher(float vx, float vy)
 {
-	mVelocity.x = vx;
-	mVelocity.y = vy;
+	mVelocity.x += vx;
+	mVelocity.y += vy;
 }
 

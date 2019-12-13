@@ -30,13 +30,7 @@ void PlayerHue::drawCurrent(sf::RenderTarget& target, sf::RenderStates states) c
 
 void PlayerHue::jump(){
 
-    // int speedJump = 5.f;
-    // sf::Vector2f position = getPosition();
-
-    // for(int i=0; i<1000; i++)
-    //     setPosition(getPosition().x, getPosition().y - speedJump);
-
-    // setPosition(position.x, position.y);
+    
 }
 
 unsigned int PlayerHue::getCategory() const
