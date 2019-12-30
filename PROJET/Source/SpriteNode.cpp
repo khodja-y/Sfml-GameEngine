@@ -2,10 +2,6 @@
 
 #include <SFML/Graphics.hpp>
 
-SpriteNode::SpriteNode()
-{
-
-}
 
 SpriteNode::~SpriteNode()
 {

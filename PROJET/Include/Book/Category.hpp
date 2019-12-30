@@ -1,5 +1,5 @@
-#ifndef BOOK_CATEGORY_HPP
-#define BOOK_CATEGORY_HPP
+#ifndef CATEGORY_HPP
+#define CATEGORY_HPP
 
 
 // Entity/scene node category, used to dispatch commands
@@ -8,10 +8,13 @@ namespace Category
 	enum Type
 	{
 		None				= 0,
-		Scene				= 1 << 0,
+		SceneAirLayer		= 1 << 0,
 		PlayerHue			= 1 << 1,
 		Pickup				= 1 << 2,
+		ParticleSystem		= 1 << 3,
+		SoundEffect			= 1 << 4,
+
 	};
 }
 
-#endif // BOOK_CATEGORY_HPP
+#endif // CATEGORY_HPP

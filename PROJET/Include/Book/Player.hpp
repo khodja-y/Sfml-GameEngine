@@ -23,6 +23,13 @@ class Player
 			ActionCount
 		};
 
+		enum LevelStatus
+		{
+			LevelRunning,
+			LevelSuccess,
+			LevelFailure
+		};
+
 
 	public:
 								Player();
@@ -34,6 +41,9 @@ class Player
 		void					assignKey(Action action, sf::Keyboard::Key key);
 		sf::Keyboard::Key		getAssignedKey(Action action) const;
 
+		void 					setLevelStatus(LevelStatus status);
+		LevelStatus 			getLevelStatus() const;
+
 
 	private:
 		void					initializeActions();
@@ -43,6 +53,7 @@ class Player
 	private:
 		std::map<sf::Keyboard::Key, Action>		mKeyBinding;
 		std::map<Action, Command>				mActionBinding;
+		LevelStatus 							mCurrentLevelStatus;
 };
 
-#endif // BOOK_PLAYER_HPP
+#endif // PLAYER_HPP

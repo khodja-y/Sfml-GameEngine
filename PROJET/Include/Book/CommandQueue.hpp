@@ -9,7 +9,6 @@
 class CommandQueue
 {
 	public:
-									CommandQueue();
 									~CommandQueue();
 		void						push(const Command& command);
 		Command						pop();

@@ -2,10 +2,6 @@
 #include <Book/SceneNode.hpp>
 #include <Book/CommandQueue.hpp>
 
-CommandQueue::CommandQueue()
-{
-
-}
 
 CommandQueue::~CommandQueue()
 {

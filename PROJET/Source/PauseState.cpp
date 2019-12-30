@@ -1,5 +1,6 @@
 #include <Book/PauseState.hpp>
 #include <Book/ResourceHolder.hpp>
+#include <Book/MusicPlayer.hpp>
 
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
@@ -30,11 +31,13 @@ PauseState::PauseState(StateStack& stack, Context context)
 	bounds = mInstructionText.getLocalBounds();
 	mInstructionText.setOrigin(std::floor(bounds.left + bounds.width / 2.f), std::floor(bounds.top + bounds.height / 2.f));
 	mInstructionText.setPosition(0.5f * viewSize.x, 0.6f * viewSize.y);
+
+	getContext().music->setPaused(true);
 }
 
 PauseState::~PauseState()
 {
-	
+	getContext().music->setPaused(false);
 }
 
 void PauseState::draw()

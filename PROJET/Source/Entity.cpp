@@ -50,6 +50,11 @@ int Entity::getHitPoints() const
 	return mHitPoints;
 }
 
+void Entity::setHitPoints(int hitPoints)
+{
+	mHitPoints = hitPoints;
+}
+
 void Entity::repair(int points)
 {
 	assert(points > 0);
@@ -66,12 +71,12 @@ void Entity::damage(int points)
 
 void Entity::destroy()
 {
-<<<<<<< HEAD
-	mVelocity.x += vx;
-	mVelocity.y += vy;
-=======
 	mHitPoints = 0;
->>>>>>> master
+}
+
+void Entity::remove()
+{
+	destroy();
 }
 
 bool Entity::isDestroyed() const
@@ -88,3 +93,5 @@ void Entity::updateCurrent(sf::Time dt)
 {
     move(mVelocity * dt.asSeconds());
 }
+
+

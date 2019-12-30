@@ -7,22 +7,10 @@
 #include <algorithm>
 
 
-struct PlayerHueMover
-{
-	PlayerHueMover(float vx, float vy)
-	: velocity(vx, vy)
-	{
-	}
 
-	void operator() (PlayerHue& playerhue, sf::Time) const
-	{
-		playerhue.marcher(velocity);
-	}
-
-	sf::Vector2f velocity;
-};
 
 Player::Player()
+: mCurrentLevelStatus(LevelRunning)
 {
 	// Set initial key bindings
 	mKeyBinding[sf::Keyboard::Left] = MoveLeft;
@@ -32,7 +20,7 @@ Player::Player()
 	// Set initial action bindings
 	initializeActions();	
 
-	// Assign all categories to player's aircraft
+	// Assign all categories to player
 	for(auto& pair : mActionBinding)
 		pair.second.category = Category::PlayerHue;
 }
@@ -91,16 +79,23 @@ sf::Keyboard::Key Player::getAssignedKey(Action action) const
 	return sf::Keyboard::Unknown;
 }
 
+void Player::setLevelStatus(LevelStatus status)
+{
+	mCurrentLevelStatus = status;
+}
+
+Player::LevelStatus Player::getLevelStatus() const
+{
+	return mCurrentLevelStatus;
+}
+
 void Player::initializeActions()
 {
-
 	sf::Vector2f playerSpeed(100.f, 0.f);
-	// mActionBinding[Jump].action = derivedAction<PlayerHue>(PlayerHueMover( 0.f, -playerSpeed));
 
 	mActionBinding[MoveLeft].action    	 = derivedAction<PlayerHue>([playerSpeed] (PlayerHue& h, sf::Time){ h.marcher(-playerSpeed);});
 	mActionBinding[MoveRight].action     = derivedAction<PlayerHue>([playerSpeed] (PlayerHue& h, sf::Time){ h.marcher(playerSpeed);});
-	//mActionBinding[Jump].action    	 = derivedAction<PlayerHue>([] (PlayerHue& h, sf::Time){ h.jump();});
-	//mActionBinding[Jump].action    	 = derivedAction<PlayerHue>([] (PlayerHue& h, sf::Time){ h.jump();});
+	mActionBinding[Jump].action    	 	 = derivedAction<PlayerHue>([] (PlayerHue& h, sf::Time){ h.jump();});
 }
 
 bool Player::isRealtimeAction(Action action)

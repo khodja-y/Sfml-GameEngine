@@ -10,6 +10,7 @@
 #include <Book/PauseState.hpp>
 #include <Book/SettingsState.hpp>
 #include <Book/LoadingState.hpp>
+#include <Book/GameOverState.hpp>
 
 
 const sf::Time Application::TimePerFrame = sf::seconds(1.f/60.f);
@@ -19,7 +20,9 @@ Application::Application()
 , mTextures()
 , mFonts()
 , mPlayer()
-, mStateStack(State::Context(mWindow, mTextures, mFonts, mPlayer))
+, mMusique()
+, mSounds()
+, mStateStack(State::Context(mWindow, mTextures, mFonts, mPlayer, mMusique))
 , mStatisticsText()
 , mStatisticsUpdateTime()
 , mStatisticsNumFrames(0)
@@ -28,17 +31,18 @@ Application::Application()
 
 	mFonts.load(Fonts::Main, "Media/Sansation.ttf");
 
-	mTextures.load(Textures::TitleScreen, "Media/Textures/TitleScreen.png");
-	mTextures.load(Textures::ButtonNormal,		"Media/Textures/ButtonNormal.png");
-	mTextures.load(Textures::ButtonSelected,	"Media/Textures/ButtonSelected.png");
-	mTextures.load(Textures::ButtonPressed,		"Media/Textures/ButtonPressed.png");
+	mTextures.load(Textures::TitleScreen, 		"Media/Textures/TitleScreen.png");
+	mTextures.load(Textures::Buttons,			"Media/Textures/Buttons.png");
+	// mTextures.load(Textures::ButtonNormal,		"Media/Textures/ButtonNormal.png");
+	// mTextures.load(Textures::ButtonSelected,	"Media/Textures/ButtonSelected.png");
+	// mTextures.load(Textures::ButtonPressed,		"Media/Textures/ButtonPressed.png");
 
 	// mStatisticsText.setFont(mFonts.get(Fonts::Main));
 	// mStatisticsText.setPosition(5.f, 5.f);
 	// mStatisticsText.setCharacterSize(10u);
 
 	registerStates();
-	mStateStack.pushState(States::Game);
+	mStateStack.pushState(States::Menu);
 }
 
 void Application::run()
@@ -91,7 +95,7 @@ void Application::render()
 	mStateStack.draw();
 
 	mWindow.setView(mWindow.getDefaultView());
-	mWindow.draw(mStatisticsText);
+	// mWindow.draw(mStatisticsText);
 
 	mWindow.display();
 }
@@ -117,5 +121,6 @@ void Application::registerStates()
 	mStateStack.registerState<PauseState>(States::Pause);
 	mStateStack.registerState<LoadingState>(States::Loading);
 	mStateStack.registerState<SettingsState>(States::Settings);
+	mStateStack.registerState<GameOverState>(States::GameOver);
 
 }

@@ -31,4 +31,4 @@ class ResourceHolder
 };
 
 #include "ResourceHolder.inl"
-#endif // BOOK_RESOURCEHOLDER_HPP
+#endif // RESOURCEHOLDER_HPP

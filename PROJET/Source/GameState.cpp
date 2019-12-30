@@ -1,11 +1,17 @@
 #include <Book/GameState.hpp>
+#include <Book/MusicPlayer.hpp>
 
 
 GameState::GameState(StateStack& stack, Context context)
 : State(stack, context)
-, mWorld(*context.window, *context.fonts)
+, mWorld(*context.window, *context.fonts, *context.sounds)
 , mPlayer(*context.player)
 {
+	context.player->setLevelStatus(Player::LevelRunning);
+
+	// play game music
+	context.music->setVolume(100.f);
+	context.music->play(Music::LevelTheme);
 }
 
 GameState::~GameState()
@@ -21,6 +27,17 @@ void GameState::draw()
 bool GameState::update(sf::Time dt)
 {
 	mWorld.update(dt);
+
+	if (!mWorld.hasAlivePlayer())
+	{
+		// mPlayer.setMissionStatus(Player::MissionFailure);
+		requestStackPush(States::GameOver);
+	}
+	else if (mWorld.hasPlayerReachedEnd())
+	{
+		// mPlayer.setMissionStatus(Player::MissionSuccess);
+		requestStackPush(States::GameOver);
+	}
 
 	CommandQueue& commands = mWorld.getCommandQueue();
 	mPlayer.handleRealtimeInput(commands);

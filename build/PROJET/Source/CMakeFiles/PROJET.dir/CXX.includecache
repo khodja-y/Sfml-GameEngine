@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../PROJET/Source/../Include/Book/Animation.hpp
+SFML/Graphics/Sprite.hpp
+-
+SFML/System/Time.hpp
+-
+
 ../PROJET/Source/../Include/Book/Application.hpp
 Book/ResourceHolder.hpp
 -
@@ -15,9 +21,31 @@ Book/Player.hpp
 -
 Book/StateStack.hpp
 -
-SFML/System.hpp
+Book/MusicPlayer.hpp
 -
-SFML/Graphics.hpp
+Book/SoundPlayer.hpp
+-
+SFML/System/Time.hpp
+-
+SFML/Graphics/RenderWindow.hpp
+-
+SFML/Graphics/Shader.hpp
+-
+SFML/Graphics/Text.hpp
+-
+
+../PROJET/Source/../Include/Book/BloomEffect.hpp
+Book/PostEffect.hpp
+-
+Book/ResourceIdentifiers.hpp
+-
+Book/ResourceHolder.hpp
+-
+SFML/Graphics/RenderTexture.hpp
+-
+SFML/Graphics/Shader.hpp
+-
+array
 -
 
 ../PROJET/Source/../Include/Book/Button.hpp
@@ -25,7 +53,7 @@ Book/Component.hpp
 -
 Book/ResourceIdentifiers.hpp
 -
-Book/ResourceHolder.hpp
+Book/State.hpp
 -
 SFML/Graphics/Sprite.hpp
 -
@@ -83,9 +111,17 @@ SFML/System/Time.hpp
 -
 SFML/Graphics/Color.hpp
 -
+SFML/Graphics/Rect.hpp
+-
 vector
 -
 functional
+-
+
+../PROJET/Source/../Include/Book/EmitterNode.hpp
+Book/SceneNode.hpp
+-
+Book/Particle.hpp
 -
 
 ../PROJET/Source/../Include/Book/Entity.hpp
@@ -95,6 +131,16 @@ Book/CommandQueue.hpp
 -
 
 ../PROJET/Source/../Include/Book/Game.hpp
+
+../PROJET/Source/../Include/Book/GameOverState.hpp
+Book/State.hpp
+-
+Book/Container.hpp
+-
+SFML/Graphics/Sprite.hpp
+-
+SFML/Graphics/Text.hpp
+-
 
 ../PROJET/Source/../Include/Book/GameState.hpp
 Book/State.hpp
@@ -128,6 +174,14 @@ SFML/Graphics/Text.hpp
 Book/ParallelTask.hpp
 -
 
+../PROJET/Source/../Include/Book/Map.hpp
+Book/SceneNode.hpp
+-
+SFML/Graphics/Texture.hpp
+-
+SFML/Graphics/VertexArray.hpp
+-
+
 ../PROJET/Source/../Include/Book/MenuState.hpp
 Book/State.hpp
 -
@@ -138,6 +192,20 @@ SFML/Graphics/Sprite.hpp
 SFML/Graphics/Text.hpp
 -
 
+../PROJET/Source/../Include/Book/MusicPlayer.hpp
+Book/ResourceHolder.hpp
+-
+Book/ResourceIdentifiers.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+SFML/Audio/Music.hpp
+-
+map
+-
+string
+-
+
 ../PROJET/Source/../Include/Book/ParallelTask.hpp
 SFML/System/Thread.hpp
 -
@@ -146,6 +214,26 @@ SFML/System/Mutex.hpp
 SFML/System/Lock.hpp
 -
 SFML/System/Clock.hpp
+-
+
+../PROJET/Source/../Include/Book/Particle.hpp
+SFML/System/Vector2.hpp
+-
+SFML/System/Time.hpp
+-
+SFML/Graphics/Color.hpp
+-
+
+../PROJET/Source/../Include/Book/ParticleNode.hpp
+Book/SceneNode.hpp
+-
+Book/ResourceIdentifiers.hpp
+-
+Book/Particle.hpp
+-
+SFML/Graphics/VertexArray.hpp
+-
+deque
 -
 
 ../PROJET/Source/../Include/Book/PauseState.hpp
@@ -181,7 +269,13 @@ Book/Entity.hpp
 -
 Book/CommandQueue.hpp
 -
-SFML/Graphics.hpp
+Book/Animation.hpp
+-
+SFML/Graphics/Sprite.hpp
+-
+
+../PROJET/Source/../Include/Book/PostEffect.hpp
+SFML/System/NonCopyable.hpp
 -
 
 ../PROJET/Source/../Include/Book/ResourceHolder.hpp
@@ -242,6 +336,28 @@ SFML/Graphics/Text.hpp
 array
 -
 
+../PROJET/Source/../Include/Book/SoundNode.hpp
+Book/SceneNode.hpp
+-
+Book/ResourceIdentifiers.hpp
+-
+
+../PROJET/Source/../Include/Book/SoundPlayer.hpp
+Book/ResourceHolder.hpp
+-
+Book/ResourceIdentifiers.hpp
+-
+SFML/System/Vector2.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+SFML/Audio/SoundBuffer.hpp
+-
+SFML/Audio/Sound.hpp
+-
+list
+-
+
 ../PROJET/Source/../Include/Book/SpriteNode.hpp
 Book/SceneNode.hpp
 -
@@ -282,6 +398,18 @@ functional
 map
 -
 
+../PROJET/Source/../Include/Book/TextNode.hpp
+Book/ResourceHolder.hpp
+-
+Book/ResourceIdentifiers.hpp
+-
+Book/SceneNode.hpp
+-
+SFML/Graphics/Text.hpp
+-
+SFML/Graphics/Font.hpp
+-
+
 ../PROJET/Source/../Include/Book/TitleState.hpp
 Book/State.hpp
 -
@@ -294,6 +422,8 @@ SFML/Graphics/Text.hpp
 SFML/Window/Keyboard.hpp
 -
 SFML/System/Vector2.hpp
+-
+Book/Animation.hpp
 -
 sstream
 -
@@ -317,13 +447,35 @@ Book/CommandQueue.hpp
 -
 Book/Pickup.hpp
 -
+Book/State.hpp
+-
+Book/Map.hpp
+-
+Book/ParticleNode.hpp
+-
+Book/PostEffect.hpp
+-
+Book/BloomEffect.hpp
+-
+Book/SoundPlayer.hpp
+-
 array
 -
 queue
 -
-SFML/Graphics.hpp
+SFML/Graphics/View.hpp
 -
-SFML/System.hpp
+SFML/Graphics/Texture.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Animation.cpp
+Book/Animation.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
+SFML/Graphics/Texture.hpp
 -
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Application.cpp
@@ -345,9 +497,19 @@ Book/SettingsState.hpp
 -
 Book/LoadingState.hpp
 -
+Book/GameOverState.hpp
+-
+
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/BloomEffect.cpp
+Book/BloomEffect.hpp
+-
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Button.cpp
 Book/Button.hpp
+-
+Book/SoundPlayer.hpp
+-
+Book/ResourceHolder.hpp
 -
 SFML/Window/Event.hpp
 -
@@ -387,6 +549,18 @@ Book/PlayerHue.hpp
 -
 Book/Pickup.hpp
 -
+Book/Particle.hpp
+-
+
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/EmitterNode.cpp
+Book/EmitterNode.hpp
+-
+Book/ParticleNode.hpp
+-
+Book/CommandQueue.hpp
+-
+Book/Command.hpp
+-
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Entity.cpp
 Book/Entity.hpp
@@ -396,8 +570,26 @@ cassert
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Game.cpp
 
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/GameOverState.cpp
+Book/GameOverState.hpp
+-
+Book/Utility.hpp
+-
+Book/Player.hpp
+-
+Book/ResourceHolder.hpp
+-
+SFML/Graphics/RectangleShape.hpp
+-
+SFML/Graphics/RenderWindow.hpp
+-
+SFML/Graphics/View.hpp
+-
+
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/GameState.cpp
 Book/GameState.hpp
+-
+Book/MusicPlayer.hpp
 -
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Label.cpp
@@ -418,6 +610,12 @@ SFML/Graphics/RenderWindow.hpp
 SFML/Graphics/View.hpp
 -
 
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Map.cpp
+Book/Map.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
+
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/MenuState.cpp
 Book/MenuState.hpp
 -
@@ -425,19 +623,41 @@ Book/ResourceHolder.hpp
 -
 Book/Button.hpp
 -
+Book/MusicPlayer.hpp
+-
 SFML/Graphics/RenderWindow.hpp
 -
 SFML/Graphics/View.hpp
+-
+
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/MusicPlayer.cpp
+Book/MusicPlayer.hpp
 -
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/ParallelTask.cpp
 Book/ParallelTask.hpp
 -
 
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/ParticleNode.cpp
+Book/ParticleNode.hpp
+-
+Book/DataTables.hpp
+-
+Book/ResourceHolder.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
+SFML/Graphics/Texture.hpp
+-
+algorithm
+-
+
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/PauseState.cpp
 Book/PauseState.hpp
 -
 Book/ResourceHolder.hpp
+-
+Book/MusicPlayer.hpp
 -
 SFML/Graphics/RectangleShape.hpp
 -
@@ -458,6 +678,8 @@ Book/CommandQueue.hpp
 Book/Utility.hpp
 -
 Book/ResourceHolder.hpp
+-
+Book/EmitterNode.hpp
 -
 SFML/Graphics/RenderTarget.hpp
 -
@@ -483,9 +705,25 @@ Book/ResourceIdentifiers.hpp
 -
 Book/ResourceHolder.hpp
 -
+Book/DataTables.hpp
+-
+Book/Utility.hpp
+-
+Book/EmitterNode.hpp
+-
 SFML/Graphics/RenderTarget.hpp
 -
 SFML/Graphics/RenderStates.hpp
+-
+
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/PostEffect.cpp
+Book/PostEffect.hpp
+-
+SFML/Graphics/Shader.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
+SFML/Graphics/VertexArray.hpp
 -
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SceneNode.cpp
@@ -520,6 +758,20 @@ sstream
 string
 -
 
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SoundNode.cpp
+Book/SoundNode.hpp
+-
+Book/SoundPlayer.hpp
+-
+
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SoundPlayer.cpp
+Book/SoundPlayer.hpp
+-
+SFML/Audio/Listener.hpp
+-
+cmath
+-
+
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/SpriteNode.cpp
 Book/SpriteNode.hpp
 -
@@ -536,6 +788,14 @@ Book/StateStack.hpp
 Book/StateStack.hpp
 -
 cassert
+-
+
+/home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/TextNode.cpp
+Book/TextNode.hpp
+-
+Book/Utility.hpp
+-
+SFML/Graphics/RenderTarget.hpp
 -
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/TitleState.cpp
@@ -564,6 +824,8 @@ cassert
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/World.cpp
 Book/World.hpp
+-
+Book/SoundNode.hpp
 -
 algorithm
 -

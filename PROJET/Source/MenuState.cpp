@@ -1,14 +1,13 @@
 #include <Book/MenuState.hpp>
 #include <Book/ResourceHolder.hpp>
 #include <Book/Button.hpp>
+#include <Book/MusicPlayer.hpp>
 
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Graphics/View.hpp>
 
 MenuState::MenuState(StateStack& stack, Context context)
 : State(stack, context)
-, mOptions()
-, mOptionIndex(0)
 , mGUIContainer()
 {
 	sf::Texture& texture = context.textures->get(Textures::TitleScreen);
@@ -16,17 +15,21 @@ MenuState::MenuState(StateStack& stack, Context context)
 
 	mBackgroundSprite.setTexture(texture);
 
-    auto playButton = std::make_shared<GUI::Button>(*context.fonts, *context.textures);
+    
+
+    //playButton = std::make_shared<GUI::Button>(*context.fonts, *context.textures);
+    auto playButton = std::make_shared<GUI::Button>(context);
     playButton->setPosition(100, 250);
     playButton->setText("Play");
     playButton->setCallback([this] ()
     {
         requestStackPop();
-        requestStackPush(States::Loading);
+        requestStackPush(States::Game);
     });
 
 
-    auto settingsButton = std::make_shared<GUI::Button>(*context.fonts, *context.textures);
+    //settingsButton = std::make_shared<GUI::Button>(*context.fonts, *context.textures);
+    auto settingsButton = std::make_shared<GUI::Button>(context);
 	settingsButton->setPosition(100, 300);
 	settingsButton->setText("Settings");
 	settingsButton->setCallback([this] ()
@@ -34,7 +37,8 @@ MenuState::MenuState(StateStack& stack, Context context)
 		requestStackPush(States::Settings);
 	});
 
-    auto exitButton = std::make_shared<GUI::Button>(*context.fonts, *context.textures);
+    //exitButton = std::make_shared<GUI::Button>(*context.fonts, *context.textures);
+    auto exitButton = std::make_shared<GUI::Button>(context);
     exitButton->setPosition(100, 350);
     exitButton->setText("Exit");
     exitButton->setCallback([this] ()
@@ -45,6 +49,12 @@ MenuState::MenuState(StateStack& stack, Context context)
     mGUIContainer.pack(playButton);
     mGUIContainer.pack(settingsButton);
     mGUIContainer.pack(exitButton);
+    
+    
+    //play menu music 
+    context.music->setVolume(10.f);
+    context.music->play(Music::MenuTheme);
+    
     
 	
 	// // A simple menu demonstration
@@ -132,13 +142,13 @@ bool MenuState::handleEvent(const sf::Event& event)
     
 }
 
-void MenuState::updateOptionText()
-{
-    if(mOptions.empty())
-        return;
+// void MenuState::updateOptionText()
+// {
+//     if(mOptions.empty())
+//         return;
     
-    for(sf::Text& text : mOptions)
-        text.setColor(sf::Color::White);
+//     for(sf::Text& text : mOptions)
+//         text.setColor(sf::Color::White);
 
-    mOptions[mOptionIndex].setColor(sf::Color::Red);
-}
+//     mOptions[mOptionIndex].setColor(sf::Color::Red);
+// }

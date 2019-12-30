@@ -1,4 +1,5 @@
 #include <Book/World.hpp>
+#include <Book/SoundNode.hpp>
 
 #include <algorithm>
 #include <cmath>
@@ -10,19 +11,23 @@
 
 
 
-World::World(sf::RenderWindow& window, FontHolder& fonts)
-: mWindow(window)
-, mWorldView(window.getDefaultView())
-, mWorldBounds(0.f,                           //x
-               0.f,                           //y
-               2000.f,                        //width
-               mWorldView.getSize().y)       //height
+World::World(sf::RenderTarget& outputTarget, FontHolder& fonts, SoundPlayer& sounds)
+: mTarget(outputTarget)
+, mSceneTexture()
+, mWorldView(mTarget.getDefaultView())
+, mTextures()
+, mFonts(fonts)
+, mSounds(sounds)
+, mSceneGraph()
+, mSceneLayers()
+, mWorldBounds(0.f, 0.f, 5000, mWorldView.getSize().y) // (x, y, width, height)
 , mSpawnPosition((mWorldView.getSize().x / 2.f) , mWorldBounds.height - mWorldView.getSize().y / 2.f)  
-, mScrollSpeed(50.f)                        
+, mScrollSpeed(-50.f)                        
 , mPlayerHue(nullptr)
 , mCommandQueue()
-, mFonts(fonts)
 {
+	mSceneTexture.create(mTarget.getSize().x, mTarget.getSize().y);
+
     loadTextures();
     buildScene();
 
@@ -47,6 +52,7 @@ void World::update(sf::Time dt)
     //forward commands to the scene graphe
     while(!mCommandQueue.isEmpty())
         mSceneGraph.onCommand(mCommandQueue.pop(), dt);
+	adaptPlayerVelocity();
 
     // Collision detection and response (may destroy entities)
 	handleCollisions();
@@ -54,7 +60,7 @@ void World::update(sf::Time dt)
     // Remove all destroyed entities (ennemies si on en met)
 	mSceneGraph.removeWrecks();
 
-    mSceneGraph.update(dt);
+    mSceneGraph.update(dt, mCommandQueue);
     adaptPlayerPosition();
     adaptViewPosition();
         
@@ -62,9 +68,14 @@ void World::update(sf::Time dt)
 
 void World::loadTextures()
 {
-    mTextures.load(Textures::Hue, "Media/Textures/girl.png");
-    mTextures.load(Textures::Fond, "Media/Textures/Desert.png");
+    // mTextures.load(Textures::Hue, "Media/Textures/player.png");
+    mTextures.load(Textures::Fond, "Media/Textures/Jungle.png");
     mTextures.load(Textures::Sol, "Media/Textures/b_scrollgrass1.png");
+	mTextures.load(Textures::Entities, "Media/Textures/player.png");
+	mTextures.load(Textures::ColorFill, "Media/Textures/color_circle.png");
+
+	mTextures.load(Textures::Explosion, "Media/Textures/player.png");
+	mTextures.load(Textures::Particle, "Media/Textures/Particle.png");
 }
 
 
@@ -72,7 +83,9 @@ void World::buildScene()
 {
     
     for(std::size_t i = 0; i < LayerCount; i++){
-        SceneNode::Ptr Layer(new SceneNode());
+		Category::Type category = (i == LowerAir) ? Category::SceneAirLayer : Category::None;
+
+        SceneNode::Ptr Layer(new SceneNode(category));
         mSceneLayers[i] = Layer.get();
 
         mSceneGraph.attachChild(std::move(Layer));
@@ -95,30 +108,104 @@ void World::buildScene()
     sf::Texture& terre = mTextures.get(Textures::Sol);
     sf::IntRect terreRect(mWorldBounds);
     terre.setRepeated(true);
+	
 
     std::unique_ptr<SpriteNode> solSprite(new SpriteNode(terre, terreRect));
     solSprite->setPosition(0.f, mSpawnPosition.y + 200.f);
-    mSceneLayers[Sol]->attachChild(std::move(solSprite));
+    mSceneLayers[UpperAir]->attachChild(std::move(solSprite));
 
+
+	
+
+    std::unique_ptr<Pickup> color(new Pickup(Pickup::ColorFill, mTextures));
+    color->setPosition(mSpawnPosition.x + 200.f, mSpawnPosition.y + 140.f);
+	color->setScale(0.25, 0.25);
+    mSceneLayers[UpperAir]->attachChild(std::move(color));
     
     
     std::unique_ptr<PlayerHue> leader(new PlayerHue(PlayerHue::Hue, mTextures));
     mPlayerHue = leader.get();
     mPlayerHue->setPosition(mSpawnPosition.x, mSpawnPosition.y + 140.f);
     mPlayerHue->setVelocity(0.f, 0.f);
-    mSceneLayers[Air]->attachChild(std::move(leader));
+    mSceneLayers[UpperAir]->attachChild(std::move(leader));
 
+
+	const int level[] =
+    {
+        0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
+        0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
+        1, 1, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
+        0, 1, 0, 0, 2, 0, 3, 3, 3, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
+        0, 1, 1, 0, 3, 3, 3, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
+        0, 0, 1, 0, 3, 0, 2, 2, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
+        2, 0, 1, 0, 3, 0, 2, 2, 2, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
+        0, 0, 1, 0, 3, 2, 2, 2, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
+        0, 0, 1, 0, 3, 2, 2, 2, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
+        0, 0, 1, 0, 3, 2, 2, 2, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2,
+
+    };
+
+    if (!mMap.load("Media/Textures/tilesheet.png", sf::Vector2u(32, 32), level, 24, 10))
+        return;
+
+	std::unique_ptr<Map> map(new Map(mMap.getVertices(), mMap.getTileSet()));
+	// mSceneLayers[UpperAir]->attachChild(std::move(map));
+
+	// Add particle node to the scene
+	std::unique_ptr<ParticleNode> smokeNode(new ParticleNode(Particle::Smoke, mTextures));
+	mSceneLayers[LowerAir]->attachChild(std::move(smokeNode));
+
+	// Add propellant particle node to the scene
+	std::unique_ptr<ParticleNode> propellantNode(new ParticleNode(Particle::Propellant, mTextures));
+	mSceneLayers[LowerAir]->attachChild(std::move(propellantNode));
+
+	// Add sound effect node
+	std::unique_ptr<SoundNode> soundNode(new SoundNode(mSounds));
+	mSceneGraph.attachChild(std::move(soundNode));
+
+
+}
+
+void World::updateSounds()
+{
+	// Set listener's position to player position
+	mSounds.setListenerPosition(mPlayerHue->getWorldPosition());
+
+	// Remove unused sounds
+	mSounds.removeStoppedSounds();
 }
 
 void World::draw()
 {
-    mWindow.setView(mWorldView);
-    mWindow.draw(mSceneGraph);
+    if (PostEffect::isSupported())
+	{
+		mSceneTexture.clear();
+		mSceneTexture.setView(mWorldView);
+		mSceneTexture.draw(mSceneGraph);
+		mSceneTexture.display();
+		
+		mBloomEffect.apply(mSceneTexture, mTarget);
+	}
+	else
+	{
+		mTarget.setView(mWorldView);
+		mTarget.draw(mSceneGraph);
+	}
 }
 
 CommandQueue& World::getCommandQueue()
 {
     return mCommandQueue;
+}
+
+bool World::hasAlivePlayer() const
+{
+	return !mPlayerHue->isMarkedForRemoval();
+}
+
+bool World::hasPlayerReachedEnd() const
+{
+	return !mWorldBounds.contains(mPlayerHue->getPosition());
 }
 
 void World::adaptPlayerPosition()
@@ -213,9 +300,10 @@ void World::handleCollisions()
 			// Apply pickup effect to player, destroy projectile AJOUT DE LA COULEUR DANS SA PALETTE
 			pickup.apply(player);
 			pickup.destroy();
+
 		}
 
-        // PAREIL POUR LES ENNEMIES
+        // SI LE PLAYER TOUCHE UN PROJECTILE ENNEMIE OU QU'UN ENNEMIE TOUCHE UN PROJECTILE ALLIÉ
 		// else if (matchesCategories(pair, Category::EnemyAircraft, Category::AlliedProjectile)
 		// 	  || matchesCategories(pair, Category::PlayerAircraft, Category::EnemyProjectile))
 		// {
@@ -227,5 +315,10 @@ void World::handleCollisions()
 		// 	projectile.destroy();
 		// }
 	}
+}
+
+sf::FloatRect World::getViewBounds() const
+{
+	return sf::FloatRect(mWorldView.getCenter() - mWorldView.getSize() / 2.f, mWorldView.getSize());
 }
 

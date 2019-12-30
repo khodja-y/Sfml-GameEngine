@@ -13,6 +13,7 @@ namespace States
         Pause,
         Loading,
         Settings,
+        GameOver,
         StateCount,
     };
 }

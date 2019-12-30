@@ -5,9 +5,13 @@
 #include <Book/ResourceIdentifiers.hpp>
 #include <Book/Player.hpp>
 #include <Book/StateStack.hpp>
+#include <Book/MusicPlayer.hpp>
+#include <Book/SoundPlayer.hpp>
 
-#include <SFML/System.hpp>
-#include <SFML/Graphics.hpp>
+#include <SFML/System/Time.hpp>
+#include <SFML/Graphics/RenderWindow.hpp>
+#include <SFML/Graphics/Shader.hpp>
+#include <SFML/Graphics/Text.hpp>
 
 
 class Application
@@ -33,6 +37,8 @@ class Application
 		TextureHolder			mTextures;
 	  	FontHolder				mFonts;
 		Player					mPlayer;
+		MusicPlayer				mMusique;
+		SoundPlayer				mSounds;
 
 		StateStack				mStateStack;
 

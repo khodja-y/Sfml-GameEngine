@@ -10,9 +10,10 @@
 #include <cmath>
 
 
-SceneNode::SceneNode() 
+SceneNode::SceneNode(Category::Type category) 
 : mChildren() 
 , mParent(nullptr)
+, mDefaultCategory(category)
 {
 
 }
@@ -60,20 +61,20 @@ void SceneNode::draw(sf::RenderTarget& target, sf::RenderStates states) const
     drawBoundingRect(target, states);
 }
 
-void SceneNode::update(sf::Time dt)
+void SceneNode::update(sf::Time dt, CommandQueue& commands)
 {
-    updateCurrent(dt);
-    updateChildren(dt);
+    updateCurrent(dt, commands);
+    updateChildren(dt, commands);
 }
 
-void SceneNode::updateCurrent(sf::Time dt)
+void SceneNode::updateCurrent(sf::Time dt, CommandQueue& commands)
 {
-
+    //ne rien faire par défaut
 }
 
 void SceneNode::drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const
 {
-    
+    //ne rien faire par défaut
 }
 
 void SceneNode::drawChildren(sf::RenderTarget& target, sf::RenderStates states) const
@@ -82,11 +83,11 @@ void SceneNode::drawChildren(sf::RenderTarget& target, sf::RenderStates states) 
 		child->draw(target, states);
 }
 
-void SceneNode::updateChildren(sf::Time dt)
+void SceneNode::updateChildren(sf::Time dt, CommandQueue& commands)
 {
     for(Ptr& child : mChildren)
     {
-        child->update(dt);
+        child->update(dt, commands);
     }
 }
 
@@ -110,7 +111,7 @@ sf::Vector2f SceneNode::getWorldPosition() const
 
 unsigned int SceneNode::getCategory() const
 {
-    return Category::Scene;
+    return mDefaultCategory;
 }
 
 void SceneNode::onCommand(const Command& command, sf::Time dt)

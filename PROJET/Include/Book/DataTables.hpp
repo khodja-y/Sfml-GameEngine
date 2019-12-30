@@ -5,6 +5,7 @@
 
 #include <SFML/System/Time.hpp>
 #include <SFML/Graphics/Color.hpp>
+#include <SFML/Graphics/Rect.hpp>
 
 #include <vector>
 #include <functional>
@@ -12,24 +13,15 @@
 
 class PlayerHue;
 
-struct Direction
-{
-	Direction(float angle, float distance)
-	: angle(angle)
-	, distance(distance)
-	{
-	}
 
-	float angle;
-	float distance;
-};
 
 struct HueData
 {
 	int								hitpoints;
 	float							speed;
 	Textures::ID					texture;
-	std::vector<Direction>			directions;
+	sf::IntRect						textureRect;
+	bool							hasMarcheAnimation;
 };
 
 
@@ -37,10 +29,18 @@ struct PickupData
 {
 	std::function<void(PlayerHue&)>	action;
 	Textures::ID					texture;
+	sf::IntRect						textureRect;
+};
+
+struct ParticleData
+{
+	sf::Color						color;
+	sf::Time						lifetime;
 };
 
 
-std::vector<PlayerHue>	initializeAircraftData();
+std::vector<HueData>		initializePlayerHueData();
 std::vector<PickupData>		initializePickupData();
+std::vector<ParticleData>	initializeParticleData();
 
 #endif // DATATABLES_HPP

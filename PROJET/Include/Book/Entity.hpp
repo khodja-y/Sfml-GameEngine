@@ -8,31 +8,29 @@
 class Entity : public SceneNode
 {
     public:
-        explicit        Entity();
+       explicit         Entity();
                         ~Entity();
         explicit        Entity(int hitpoints);
 
         void            setVelocity(sf::Vector2f velocity);
         void            setVelocity(float vx, float vy);
+
         void            marcher(sf::Vector2f velocity);
         void            marcher(float vx, float vy);
+
+        void            jump(sf::Vector2f velocity);
+        void            jump(float vx, float vy);
+        
         sf::Vector2f    getVelocity() const;
 
-<<<<<<< HEAD
-        // int                 getHitPoints() const;
-        // void				repair(int points);
-		// void				damage(int points);
-		// void				destroy();
-		// virtual void		remove();
-		// virtual bool		isDestroyed() const;
-=======
+
         int                 getHitPoints() const;
+        void                setHitPoints(int hitPoints);
         void				repair(int points);
 		void				damage(int points);
 		void				destroy();
-		//virtual void		remove();
+		virtual void		remove();
 		virtual bool		isDestroyed() const;
->>>>>>> master
 
     protected:
         virtual void        updateCurrent(sf::Time dt, CommandQueue& commands);

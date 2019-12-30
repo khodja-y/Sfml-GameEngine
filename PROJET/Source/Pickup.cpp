@@ -4,6 +4,7 @@
 #include <Book/CommandQueue.hpp>
 #include <Book/Utility.hpp>
 #include <Book/ResourceHolder.hpp>
+#include <Book/EmitterNode.hpp>
 
 #include <SFML/Graphics/RenderTarget.hpp>
 
@@ -16,9 +17,11 @@ namespace
 Pickup::Pickup(Type type, const TextureHolder& textures)
 : Entity(1)
 , mType(type)
-, mSprite(textures.get(Table[type].texture))
+, mSprite(textures.get(Table[type].texture), Table[type].textureRect)
 {
 	centerOrigin(mSprite);
+
+	
 }
 
 unsigned int Pickup::getCategory() const

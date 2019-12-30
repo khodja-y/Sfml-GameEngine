@@ -84,7 +84,7 @@ PROJET/Source/preinstall:
 PROJET/Source/CMakeFiles/PROJET.dir/all:
 	$(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/depend
 	$(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Built target PROJET"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39 "Built target PROJET"
 .PHONY : PROJET/Source/CMakeFiles/PROJET.dir/all
 
 # Include target in all.
@@ -94,7 +94,7 @@ all: PROJET/Source/CMakeFiles/PROJET.dir/all
 
 # Build rule for subdir invocation for target.
 PROJET/Source/CMakeFiles/PROJET.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles 39
 	$(MAKE) -f CMakeFiles/Makefile2 PROJET/Source/CMakeFiles/PROJET.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasmine/Bureau/Sfml-GameEngine-Hue/build/CMakeFiles 0
 .PHONY : PROJET/Source/CMakeFiles/PROJET.dir/rule

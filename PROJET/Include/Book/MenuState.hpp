@@ -18,8 +18,6 @@ class MenuState : public State
 		virtual bool			update(sf::Time dt);
 		virtual bool			handleEvent(const sf::Event& event);
 
-		void					updateOptionText();
-
 
 	private:
 		enum OptionNames
@@ -31,10 +29,6 @@ class MenuState : public State
 
 	private:
 		sf::Sprite				mBackgroundSprite;
-
-		std::vector<sf::Text>	mOptions;
-		std::size_t				mOptionIndex;
-
 		GUI::Container			mGUIContainer;
 };
 

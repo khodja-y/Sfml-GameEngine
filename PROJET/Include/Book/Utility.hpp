@@ -5,6 +5,8 @@
 
 #include <SFML/System/Vector2.hpp>
 
+#include <Book/Animation.hpp>
+
 #include <sstream>
 
 namespace sf
@@ -23,6 +25,7 @@ std::string toString(sf::Keyboard::Key key);
 // Call setOrigin() with the center of the object
 void			centerOrigin(sf::Sprite& sprite);
 void			centerOrigin(sf::Text& text);
+void			centerOrigin(Animation& animation);
 
 // Degree/radian conversion
 float			toDegree(float radian);

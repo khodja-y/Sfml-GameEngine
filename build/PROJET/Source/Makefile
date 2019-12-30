@@ -169,6 +169,33 @@ PROJET/fast:
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/build
 .PHONY : PROJET/fast
 
+Animation.o: Animation.cpp.o
+
+.PHONY : Animation.o
+
+# target to build an object file
+Animation.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Animation.cpp.o
+.PHONY : Animation.cpp.o
+
+Animation.i: Animation.cpp.i
+
+.PHONY : Animation.i
+
+# target to preprocess a source file
+Animation.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Animation.cpp.i
+.PHONY : Animation.cpp.i
+
+Animation.s: Animation.cpp.s
+
+.PHONY : Animation.s
+
+# target to generate assembly for a file
+Animation.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Animation.cpp.s
+.PHONY : Animation.cpp.s
+
 Application.o: Application.cpp.o
 
 .PHONY : Application.o
@@ -195,6 +222,33 @@ Application.s: Application.cpp.s
 Application.cpp.s:
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.s
 .PHONY : Application.cpp.s
+
+BloomEffect.o: BloomEffect.cpp.o
+
+.PHONY : BloomEffect.o
+
+# target to build an object file
+BloomEffect.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/BloomEffect.cpp.o
+.PHONY : BloomEffect.cpp.o
+
+BloomEffect.i: BloomEffect.cpp.i
+
+.PHONY : BloomEffect.i
+
+# target to preprocess a source file
+BloomEffect.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/BloomEffect.cpp.i
+.PHONY : BloomEffect.cpp.i
+
+BloomEffect.s: BloomEffect.cpp.s
+
+.PHONY : BloomEffect.s
+
+# target to generate assembly for a file
+BloomEffect.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/BloomEffect.cpp.s
+.PHONY : BloomEffect.cpp.s
 
 Button.o: Button.cpp.o
 
@@ -358,6 +412,33 @@ DataTables.cpp.s:
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/DataTables.cpp.s
 .PHONY : DataTables.cpp.s
 
+EmitterNode.o: EmitterNode.cpp.o
+
+.PHONY : EmitterNode.o
+
+# target to build an object file
+EmitterNode.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/EmitterNode.cpp.o
+.PHONY : EmitterNode.cpp.o
+
+EmitterNode.i: EmitterNode.cpp.i
+
+.PHONY : EmitterNode.i
+
+# target to preprocess a source file
+EmitterNode.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/EmitterNode.cpp.i
+.PHONY : EmitterNode.cpp.i
+
+EmitterNode.s: EmitterNode.cpp.s
+
+.PHONY : EmitterNode.s
+
+# target to generate assembly for a file
+EmitterNode.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/EmitterNode.cpp.s
+.PHONY : EmitterNode.cpp.s
+
 Entity.o: Entity.cpp.o
 
 .PHONY : Entity.o
@@ -411,6 +492,33 @@ Game.s: Game.cpp.s
 Game.cpp.s:
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Game.cpp.s
 .PHONY : Game.cpp.s
+
+GameOverState.o: GameOverState.cpp.o
+
+.PHONY : GameOverState.o
+
+# target to build an object file
+GameOverState.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/GameOverState.cpp.o
+.PHONY : GameOverState.cpp.o
+
+GameOverState.i: GameOverState.cpp.i
+
+.PHONY : GameOverState.i
+
+# target to preprocess a source file
+GameOverState.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/GameOverState.cpp.i
+.PHONY : GameOverState.cpp.i
+
+GameOverState.s: GameOverState.cpp.s
+
+.PHONY : GameOverState.s
+
+# target to generate assembly for a file
+GameOverState.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/GameOverState.cpp.s
+.PHONY : GameOverState.cpp.s
 
 GameState.o: GameState.cpp.o
 
@@ -493,6 +601,33 @@ LoadingState.cpp.s:
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/LoadingState.cpp.s
 .PHONY : LoadingState.cpp.s
 
+Map.o: Map.cpp.o
+
+.PHONY : Map.o
+
+# target to build an object file
+Map.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Map.cpp.o
+.PHONY : Map.cpp.o
+
+Map.i: Map.cpp.i
+
+.PHONY : Map.i
+
+# target to preprocess a source file
+Map.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Map.cpp.i
+.PHONY : Map.cpp.i
+
+Map.s: Map.cpp.s
+
+.PHONY : Map.s
+
+# target to generate assembly for a file
+Map.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/Map.cpp.s
+.PHONY : Map.cpp.s
+
 MenuState.o: MenuState.cpp.o
 
 .PHONY : MenuState.o
@@ -520,6 +655,33 @@ MenuState.cpp.s:
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/MenuState.cpp.s
 .PHONY : MenuState.cpp.s
 
+MusicPlayer.o: MusicPlayer.cpp.o
+
+.PHONY : MusicPlayer.o
+
+# target to build an object file
+MusicPlayer.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/MusicPlayer.cpp.o
+.PHONY : MusicPlayer.cpp.o
+
+MusicPlayer.i: MusicPlayer.cpp.i
+
+.PHONY : MusicPlayer.i
+
+# target to preprocess a source file
+MusicPlayer.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/MusicPlayer.cpp.i
+.PHONY : MusicPlayer.cpp.i
+
+MusicPlayer.s: MusicPlayer.cpp.s
+
+.PHONY : MusicPlayer.s
+
+# target to generate assembly for a file
+MusicPlayer.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/MusicPlayer.cpp.s
+.PHONY : MusicPlayer.cpp.s
+
 ParallelTask.o: ParallelTask.cpp.o
 
 .PHONY : ParallelTask.o
@@ -546,6 +708,33 @@ ParallelTask.s: ParallelTask.cpp.s
 ParallelTask.cpp.s:
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/ParallelTask.cpp.s
 .PHONY : ParallelTask.cpp.s
+
+ParticleNode.o: ParticleNode.cpp.o
+
+.PHONY : ParticleNode.o
+
+# target to build an object file
+ParticleNode.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/ParticleNode.cpp.o
+.PHONY : ParticleNode.cpp.o
+
+ParticleNode.i: ParticleNode.cpp.i
+
+.PHONY : ParticleNode.i
+
+# target to preprocess a source file
+ParticleNode.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/ParticleNode.cpp.i
+.PHONY : ParticleNode.cpp.i
+
+ParticleNode.s: ParticleNode.cpp.s
+
+.PHONY : ParticleNode.s
+
+# target to generate assembly for a file
+ParticleNode.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/ParticleNode.cpp.s
+.PHONY : ParticleNode.cpp.s
 
 PauseState.o: PauseState.cpp.o
 
@@ -655,6 +844,33 @@ PlayerHue.cpp.s:
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.s
 .PHONY : PlayerHue.cpp.s
 
+PostEffect.o: PostEffect.cpp.o
+
+.PHONY : PostEffect.o
+
+# target to build an object file
+PostEffect.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PostEffect.cpp.o
+.PHONY : PostEffect.cpp.o
+
+PostEffect.i: PostEffect.cpp.i
+
+.PHONY : PostEffect.i
+
+# target to preprocess a source file
+PostEffect.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PostEffect.cpp.i
+.PHONY : PostEffect.cpp.i
+
+PostEffect.s: PostEffect.cpp.s
+
+.PHONY : PostEffect.s
+
+# target to generate assembly for a file
+PostEffect.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/PostEffect.cpp.s
+.PHONY : PostEffect.cpp.s
+
 SceneNode.o: SceneNode.cpp.o
 
 .PHONY : SceneNode.o
@@ -708,6 +924,60 @@ SettingsState.s: SettingsState.cpp.s
 SettingsState.cpp.s:
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SettingsState.cpp.s
 .PHONY : SettingsState.cpp.s
+
+SoundNode.o: SoundNode.cpp.o
+
+.PHONY : SoundNode.o
+
+# target to build an object file
+SoundNode.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SoundNode.cpp.o
+.PHONY : SoundNode.cpp.o
+
+SoundNode.i: SoundNode.cpp.i
+
+.PHONY : SoundNode.i
+
+# target to preprocess a source file
+SoundNode.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SoundNode.cpp.i
+.PHONY : SoundNode.cpp.i
+
+SoundNode.s: SoundNode.cpp.s
+
+.PHONY : SoundNode.s
+
+# target to generate assembly for a file
+SoundNode.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SoundNode.cpp.s
+.PHONY : SoundNode.cpp.s
+
+SoundPlayer.o: SoundPlayer.cpp.o
+
+.PHONY : SoundPlayer.o
+
+# target to build an object file
+SoundPlayer.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SoundPlayer.cpp.o
+.PHONY : SoundPlayer.cpp.o
+
+SoundPlayer.i: SoundPlayer.cpp.i
+
+.PHONY : SoundPlayer.i
+
+# target to preprocess a source file
+SoundPlayer.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SoundPlayer.cpp.i
+.PHONY : SoundPlayer.cpp.i
+
+SoundPlayer.s: SoundPlayer.cpp.s
+
+.PHONY : SoundPlayer.s
+
+# target to generate assembly for a file
+SoundPlayer.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/SoundPlayer.cpp.s
+.PHONY : SoundPlayer.cpp.s
 
 SpriteNode.o: SpriteNode.cpp.o
 
@@ -789,6 +1059,33 @@ StateStack.s: StateStack.cpp.s
 StateStack.cpp.s:
 	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/StateStack.cpp.s
 .PHONY : StateStack.cpp.s
+
+TextNode.o: TextNode.cpp.o
+
+.PHONY : TextNode.o
+
+# target to build an object file
+TextNode.cpp.o:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/TextNode.cpp.o
+.PHONY : TextNode.cpp.o
+
+TextNode.i: TextNode.cpp.i
+
+.PHONY : TextNode.i
+
+# target to preprocess a source file
+TextNode.cpp.i:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/TextNode.cpp.i
+.PHONY : TextNode.cpp.i
+
+TextNode.s: TextNode.cpp.s
+
+.PHONY : TextNode.s
+
+# target to generate assembly for a file
+TextNode.cpp.s:
+	cd /home/yasmine/Bureau/Sfml-GameEngine-Hue/build && $(MAKE) -f PROJET/Source/CMakeFiles/PROJET.dir/build.make PROJET/Source/CMakeFiles/PROJET.dir/TextNode.cpp.s
+.PHONY : TextNode.cpp.s
 
 TitleState.o: TitleState.cpp.o
 
@@ -911,9 +1208,15 @@ help:
 	@echo "... install/local"
 	@echo "... PROJET"
 	@echo "... edit_cache"
+	@echo "... Animation.o"
+	@echo "... Animation.i"
+	@echo "... Animation.s"
 	@echo "... Application.o"
 	@echo "... Application.i"
 	@echo "... Application.s"
+	@echo "... BloomEffect.o"
+	@echo "... BloomEffect.i"
+	@echo "... BloomEffect.s"
 	@echo "... Button.o"
 	@echo "... Button.i"
 	@echo "... Button.s"
@@ -932,12 +1235,18 @@ help:
 	@echo "... DataTables.o"
 	@echo "... DataTables.i"
 	@echo "... DataTables.s"
+	@echo "... EmitterNode.o"
+	@echo "... EmitterNode.i"
+	@echo "... EmitterNode.s"
 	@echo "... Entity.o"
 	@echo "... Entity.i"
 	@echo "... Entity.s"
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
+	@echo "... GameOverState.o"
+	@echo "... GameOverState.i"
+	@echo "... GameOverState.s"
 	@echo "... GameState.o"
 	@echo "... GameState.i"
 	@echo "... GameState.s"
@@ -947,12 +1256,21 @@ help:
 	@echo "... LoadingState.o"
 	@echo "... LoadingState.i"
 	@echo "... LoadingState.s"
+	@echo "... Map.o"
+	@echo "... Map.i"
+	@echo "... Map.s"
 	@echo "... MenuState.o"
 	@echo "... MenuState.i"
 	@echo "... MenuState.s"
+	@echo "... MusicPlayer.o"
+	@echo "... MusicPlayer.i"
+	@echo "... MusicPlayer.s"
 	@echo "... ParallelTask.o"
 	@echo "... ParallelTask.i"
 	@echo "... ParallelTask.s"
+	@echo "... ParticleNode.o"
+	@echo "... ParticleNode.i"
+	@echo "... ParticleNode.s"
 	@echo "... PauseState.o"
 	@echo "... PauseState.i"
 	@echo "... PauseState.s"
@@ -965,12 +1283,21 @@ help:
 	@echo "... PlayerHue.o"
 	@echo "... PlayerHue.i"
 	@echo "... PlayerHue.s"
+	@echo "... PostEffect.o"
+	@echo "... PostEffect.i"
+	@echo "... PostEffect.s"
 	@echo "... SceneNode.o"
 	@echo "... SceneNode.i"
 	@echo "... SceneNode.s"
 	@echo "... SettingsState.o"
 	@echo "... SettingsState.i"
 	@echo "... SettingsState.s"
+	@echo "... SoundNode.o"
+	@echo "... SoundNode.i"
+	@echo "... SoundNode.s"
+	@echo "... SoundPlayer.o"
+	@echo "... SoundPlayer.i"
+	@echo "... SoundPlayer.s"
 	@echo "... SpriteNode.o"
 	@echo "... SpriteNode.i"
 	@echo "... SpriteNode.s"
@@ -980,6 +1307,9 @@ help:
 	@echo "... StateStack.o"
 	@echo "... StateStack.i"
 	@echo "... StateStack.s"
+	@echo "... TextNode.o"
+	@echo "... TextNode.i"
+	@echo "... TextNode.s"
 	@echo "... TitleState.o"
 	@echo "... TitleState.i"
 	@echo "... TitleState.s"
