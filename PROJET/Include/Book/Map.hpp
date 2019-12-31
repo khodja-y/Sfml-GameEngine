@@ -14,13 +14,13 @@ class Map : public SceneNode
                     ~Map();
                     Map(sf::VertexArray vertices, sf::Texture tileset);
 
-        void setVertices(sf::VertexArray vertices);
-        void setTexture(sf::Texture tileset);
+        void        setVertices(sf::VertexArray vertices);
+        void        setTexture(sf::Texture tileset);
 
-        sf::VertexArray getVertices() const;
-        sf::Texture     getTileSet() const;  
+        sf::VertexArray     getVertices() const;
+        sf::Texture         getTileSet() const;  
 
-        sf::FloatRect getBoundingRect() const;
+        sf::FloatRect       getBoundingRect() const;
         
         bool load(const std::string& tileset, sf::Vector2u tileSize, const int* tiles, unsigned int width, unsigned int height);
         

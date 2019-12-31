@@ -37,6 +37,7 @@ class Application
 		TextureHolder			mTextures;
 	  	FontHolder				mFonts;
 		Player					mPlayer;
+		
 		MusicPlayer				mMusique;
 		SoundPlayer				mSounds;
 

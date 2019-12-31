@@ -28,6 +28,7 @@ PlayerHue::PlayerHue(Type type, const TextureHolder& textures)
 , mSprite(textures.get(Table[type].texture), Table[type].textureRect)
 , mMort(textures.get(Textures::Explosion))
 , mShowMort(true)
+, mOnGround(true)
 {
     mMort.setFrameSize(sf::Vector2i(15,15));
     mMort.setNumFrames(8);
@@ -37,16 +38,15 @@ PlayerHue::PlayerHue(Type type, const TextureHolder& textures)
     centerOrigin(mMort);
 
     centerOrigin(mSprite);
-
 	
 
     sf::FloatRect bounds = mSprite.getGlobalBounds();
     mSprite.setOrigin(bounds.width / 2.f, bounds.height / 2.f);
     mSprite.setScale(5, 5);
 
-	std::unique_ptr<EmitterNode> smoke(new EmitterNode(Particle::Smoke));
-	smoke->setPosition(0.f, getBoundingRect().height / 2.f);
-	attachChild(std::move(smoke));
+	// std::unique_ptr<EmitterNode> smoke(new EmitterNode(Particle::Smoke));
+	// smoke->setPosition(0.f, getBoundingRect().height / 2.f);
+	// attachChild(std::move(smoke));
 }
 
 void PlayerHue::drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const
@@ -83,13 +83,13 @@ void PlayerHue::updateCurrent(sf::Time dt, CommandQueue& commands)
 
 void PlayerHue::jump(){
 
-    // int speedJump = 5.f;
-    // sf::Vector2f position = getPosition();
+    int speedJump = 5.f;
+    sf::Vector2f position = getPosition();
 
-    // for(int i=0; i<1000; i++)
-    //     setPosition(getPosition().x, getPosition().y - speedJump);
+    for(int i=0; i<1000; i++)
+        setPosition(getPosition().x, getPosition().y - speedJump);
 
-    // setPosition(position.x, position.y);
+    setPosition(position.x, position.y);
 }
 
 unsigned int PlayerHue::getCategory() const

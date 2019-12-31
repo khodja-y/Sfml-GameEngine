@@ -239,6 +239,8 @@ deque
 ../PROJET/Source/../Include/Book/PauseState.hpp
 Book/State.hpp
 -
+Book/Container.hpp
+-
 SFML/Graphics/Sprite.hpp
 -
 SFML/Graphics/Text.hpp

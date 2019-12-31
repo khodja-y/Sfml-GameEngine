@@ -13,6 +13,7 @@ class CommandQueue;
 class Player
 {
 	public:
+	
 		enum Action
 		{
 			MoveLeft,

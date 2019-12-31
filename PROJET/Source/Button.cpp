@@ -74,7 +74,7 @@ void Button::activate()
 	if (!mIsToggle)
 		deactivate();
 
-	// mSounds.play(SoundEffect::Button);
+	mSounds.play(SoundEffect::Button);
 }
 
 void Button::deactivate()

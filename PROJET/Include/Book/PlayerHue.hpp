@@ -51,6 +51,8 @@ class PlayerHue : public Entity
 
         bool            mShowMort;
 
+        bool            mOnGround;
+
         Animation       mMarche;
         Animation       mMort;
 

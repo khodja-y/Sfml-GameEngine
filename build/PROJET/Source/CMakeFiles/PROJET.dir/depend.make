@@ -203,6 +203,8 @@ PROJET/Source/CMakeFiles/PROJET.dir/ParticleNode.cpp.o: ../PROJET/Source/../Incl
 PROJET/Source/CMakeFiles/PROJET.dir/ParticleNode.cpp.o: ../PROJET/Source/../Include/Book/SceneNode.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/ParticleNode.cpp.o: ../PROJET/Source/ParticleNode.cpp
 
+PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: ../PROJET/Source/../Include/Book/Component.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: ../PROJET/Source/../Include/Book/Container.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: ../PROJET/Source/../Include/Book/MusicPlayer.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: ../PROJET/Source/../Include/Book/PauseState.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/PauseState.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.hpp

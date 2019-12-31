@@ -145,19 +145,19 @@ void World::buildScene()
 
     };
 
-    if (!mMap.load("Media/Textures/tilesheet.png", sf::Vector2u(32, 32), level, 24, 10))
+    if (!mMap.load("Media/Textures/tilesheet.png", sf::Vector2u(32, 32), level, 24, 20))
         return;
 
 	std::unique_ptr<Map> map(new Map(mMap.getVertices(), mMap.getTileSet()));
 	// mSceneLayers[UpperAir]->attachChild(std::move(map));
 
-	// Add particle node to the scene
-	std::unique_ptr<ParticleNode> smokeNode(new ParticleNode(Particle::Smoke, mTextures));
-	mSceneLayers[LowerAir]->attachChild(std::move(smokeNode));
+	// // Add particle node to the scene
+	// std::unique_ptr<ParticleNode> smokeNode(new ParticleNode(Particle::Smoke, mTextures));
+	// mSceneLayers[LowerAir]->attachChild(std::move(smokeNode));
 
 	// Add propellant particle node to the scene
-	std::unique_ptr<ParticleNode> propellantNode(new ParticleNode(Particle::Propellant, mTextures));
-	mSceneLayers[LowerAir]->attachChild(std::move(propellantNode));
+	// std::unique_ptr<ParticleNode> propellantNode(new ParticleNode(Particle::Propellant, mTextures));
+	// mSceneLayers[LowerAir]->attachChild(std::move(propellantNode));
 
 	// Add sound effect node
 	std::unique_ptr<SoundNode> soundNode(new SoundNode(mSounds));

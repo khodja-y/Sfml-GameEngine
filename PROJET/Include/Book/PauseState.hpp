@@ -3,6 +3,7 @@
 
 
 #include <Book/State.hpp>
+#include <Book/Container.hpp>
 
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Text.hpp>
@@ -23,6 +24,7 @@ class PauseState : public State
 		sf::Sprite			mBackgroundSprite;
 		sf::Text			mPausedText;
 		sf::Text			mInstructionText;
+		GUI::Container		mGUIContainer;
 };
 
 

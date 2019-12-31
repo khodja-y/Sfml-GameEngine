@@ -19,12 +19,12 @@ class MenuState : public State
 		virtual bool			handleEvent(const sf::Event& event);
 
 
-	private:
+	/* private:
 		enum OptionNames
 		{
 			Play,
 			Exit,
-		};
+		}; */
 
 
 	private:
