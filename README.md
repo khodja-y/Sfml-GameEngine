@@ -7,7 +7,7 @@ On boucle tant que l'interface est active puis on affiche le premier élément d
 
 ## Diagramme à état de l'UI:
 - Classes: State, StateStack (pile des état), StateIdentifiers (enum pour différencier les état), MenuState (Affichage du menu), LoadingState (chargement des ressources), GameState (lancement de la partie), GameOverState (retour au menu à la fin du jeu), PauseState (mise du jeu en pause), SettingsState (affichage des paramètres) , TitleState (affichage de l'écra, d'accueil)
-![40% center](Rapport/FSM_States.png)
+![center](Rapport/FSM_States.png)
 - Classe Component: permet de déssiner un composant de l'UI utilisant la bibliothèque graphical user interface du c++.  
 - Classe Button: hérite de la classe component et permet d'instancier et d'afficher les boutons.
 - Classe Container: hérite de la classe composant et permet d'instancier des conteneurs pour afficher les labels et boutons par exemple.
