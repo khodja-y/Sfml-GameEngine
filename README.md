@@ -45,4 +45,14 @@ On boucle tant que l'interface est active puis on affiche le premier élément d
 ## Animation:
 - Classe Animation permettant de produire des animations à partir de sprites d'animations précalculées.
 
+## Compilation
+cd build
+make 
+./PROJET/Source/PROJET
 
+Ou alors il faut installer la bibliothèque SFML 2.5.1 puis:
+mkdir build
+cd build
+cmake ..
+make
+./PROJET/Source/PROJET
