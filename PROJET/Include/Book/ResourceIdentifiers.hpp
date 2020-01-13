@@ -15,15 +15,10 @@ namespace Textures
 {
 	enum ID
 	{
-		Desert,
 		Hue,
 		Fond,
 		Sol,
 		ColorFill,
-
-		ButtonNormal,
-		ButtonSelected,
-		ButtonPressed,
 
 		Entities,
 		Map,
@@ -68,11 +63,7 @@ namespace SoundEffect
 {
 	enum ID
 	{
-		AlliedGunfire,
-		EnemyGunfire,
-		Explosion1,
-		Explosion2,
-		LaunchMissile,
+		
 		CollectPickup,
 		Button,
 	};

@@ -15,7 +15,7 @@ Map::Map(sf::VertexArray vertices, sf::Texture tileset)
 : m_vertices(vertices)
 , m_tileset(tileset)
 {
-
+    
 }
 
 sf::VertexArray Map::getVertices() const

@@ -13,7 +13,7 @@ std::vector<HueData> initializePlayerHueData()
 	data[PlayerHue::Hue].hitpoints = 100;
     data[PlayerHue::Hue].speed = 200.f;
     data[PlayerHue::Hue].texture = Textures::Entities;
-	data[PlayerHue::Hue].textureRect = sf::IntRect(0,0,50,65);
+	data[PlayerHue::Hue].textureRect = sf::IntRect(0,0,15,15);
 	data[PlayerHue::Hue].hasMarcheAnimation = true;
 
 	return data;

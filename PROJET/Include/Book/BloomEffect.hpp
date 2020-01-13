@@ -41,4 +41,4 @@ class BloomEffect : public PostEffect
 		RenderTextureArray	mSecondPassTextures;
 };
 
-#endif // BOOK_BLOOMEFFECT_HPP
+#endif // BLOOMEFFECT_HPP

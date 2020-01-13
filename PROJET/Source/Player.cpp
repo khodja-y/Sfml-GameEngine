@@ -17,6 +17,7 @@ Player::Player()
 	mKeyBinding[sf::Keyboard::Right] = MoveRight;
 	mKeyBinding[sf::Keyboard::Space] = Jump;
 
+	setLevelStatus(Player::LevelRunning);
 	// Set initial action bindings
 	initializeActions();	
 

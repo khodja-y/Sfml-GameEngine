@@ -53,7 +53,7 @@ class PlayerHue : public Entity
         bool            mShowMort;
 
         bool            mOnGround;
-        float           gravity = 9.81;
+        float           gravity = -981;
         int             jumpCount = 0;
 
         Animation       mMarche;

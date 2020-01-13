@@ -49,7 +49,7 @@ PlayerHue::PlayerHue(Type type, const TextureHolder& textures)
 
     sf::FloatRect bounds = mSprite.getGlobalBounds();
     mSprite.setOrigin(bounds.width / 2.f, bounds.height / 2.f);
-
+	mSprite.setScale(5,5);
 
 	// std::unique_ptr<EmitterNode> smoke(new EmitterNode(Particle::Smoke));
 	// smoke->setPosition(0.f, getBoundingRect().height / 2.f);
@@ -70,10 +70,10 @@ void PlayerHue::drawCurrent(sf::RenderTarget& target, sf::RenderStates states) c
 void PlayerHue::updateCurrent(sf::Time dt, CommandQueue& commands)
 {
 	sf::Vector2f position = getPosition();
-	float force = gravity * dt.asSeconds();
+	float force = 5 * gravity * dt.asSeconds();
 	setPosition(position.x, position.y - force * dt.asSeconds());
 
-	if(getPosition().y > 100)
+	if(getPosition().y > 390)
 	{
 		setPosition(position);
 		force = 0;
@@ -98,7 +98,7 @@ void PlayerHue::jump(sf::Time dt){
 
 	sf::Vector2f velocity = getVelocity();
 	velocity.x = 0;
-	velocity.y = -500.f;
+	velocity.y = -2000.f;
 
 
 	if(jumpCount < 2)
@@ -128,11 +128,11 @@ void PlayerHue::updateMarcheAnimation()
 		
 		// Roll left: Texture rect offset once
 		if (getVelocity().x < 0.f)
-			textureRect.left += 4 * textureRect.width;
+			textureRect.left +=  textureRect.width;
 
 		// Roll right: Texture rect offset twice
 		else if (getVelocity().x > 0.f)
-			textureRect.left += 4 * textureRect.width;
+			textureRect.left += 2 * textureRect.width;
 
 		mSprite.setTextureRect(textureRect);
 	}

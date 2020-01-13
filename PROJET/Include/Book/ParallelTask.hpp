@@ -25,4 +25,4 @@ class ParallelTask
 		sf::Mutex			mMutex;
 };
 
-#endif // BOOK_PARALLELTASK_HPP
+#endif // PARALLELTASK_HPP

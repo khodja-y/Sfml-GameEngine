@@ -24,4 +24,4 @@ class PostEffect : sf::NonCopyable
 		static void				applyShader(const sf::Shader& shader, sf::RenderTarget& output);
 };
 
-#endif // BOOK_POSTEFFECT_HPP
+#endif // POSTEFFECT_HPP

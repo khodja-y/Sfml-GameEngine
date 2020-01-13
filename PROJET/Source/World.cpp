@@ -70,7 +70,7 @@ void World::loadTextures()
     // mTextures.load(Textures::Hue, "Media/Textures/player.png");
     mTextures.load(Textures::Fond, "Media/Textures/background_32.png");
     mTextures.load(Textures::Sol, "Media/Textures/b_scrollgrass1.png");
-	mTextures.load(Textures::Entities, "Media/Textures/png.png");
+	mTextures.load(Textures::Entities, "Media/Textures/player.png");
 	mTextures.load(Textures::ColorFill, "Media/Textures/color_circle.png");
 
 	mTextures.load(Textures::Explosion, "Media/Textures/Explosion.png");
@@ -101,7 +101,7 @@ void World::buildScene()
     //lier la texture du fond avec le noeud 
     std::unique_ptr<SpriteNode> backgroundSprite(new SpriteNode(texture, textureRect));
     backgroundSprite->setPosition(mWorldBounds.left, mWorldBounds.top);
-	backgroundSprite->setScale(4, 4);
+	backgroundSprite->setScale(5, 5);
     mSceneLayers[Background]->attachChild(std::move(backgroundSprite));
 
 
@@ -110,16 +110,16 @@ void World::buildScene()
     terre.setRepeated(true);
 	
 
-    std::unique_ptr<SpriteNode> solSprite(new SpriteNode(terre, terreRect));
-    solSprite->setPosition(0.f, mSpawnPosition.y + 200.f);
-    mSceneLayers[UpperAir]->attachChild(std::move(solSprite));
+    // std::unique_ptr<SpriteNode> solSprite(new SpriteNode(terre, terreRect));
+    // solSprite->setPosition(0.f, mSpawnPosition.y + 200.f);
+    // mSceneLayers[UpperAir]->attachChild(std::move(solSprite));
 
 
 	
 
     std::unique_ptr<Pickup> color(new Pickup(Pickup::ColorFill, mTextures));
-    color->setPosition(mSpawnPosition.x + 600.f, mSpawnPosition.y + 140.f);
-	color->setScale(0.25, 0.25);
+    color->setPosition(mSpawnPosition.x + 700.f, mSpawnPosition.y + 140.f);
+	color->setScale(0.2, 0.2);
     mSceneLayers[UpperAir]->attachChild(std::move(color));
 
     
@@ -130,13 +130,26 @@ void World::buildScene()
     mPlayerHue->setVelocity(0.f, 0.f);
     mSceneLayers[UpperAir]->attachChild(std::move(leader));
 
+	const int level[] =
+    {
+        6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 9, 9, 9, 0, 0, 0, 0, 0, 0,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 9, 9, 1, 1, 1, 1, 1, 1,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 9, 9, 1, 1, 1, 1, 1, 1,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 9, 9, 1, 1, 1, 1, 1, 1,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 9, 9, 1, 1, 1, 1, 1, 1,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 9, 9, 1, 1, 1, 1, 1, 1,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 9, 9, 1, 1, 1, 1, 1, 1,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 9, 9, 1, 1, 1, 1, 1, 1,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 9, 9, 1, 1, 1, 1, 1, 1,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 9, 9, 1, 1, 1, 1, 1, 1,
+    };
 
-
-    // if (!mMap.load("Media/Textures/tilesheet.png", sf::Vector2u(32, 32), level, 480, 50))
-    //     return;
-
-	// std::unique_ptr<Map> map(new Map(mMap.getVertices(), mMap.getTileSet()));
-	// mSceneLayers[UpperAir]->attachChild(std::move(map));
+    if (!mMap.load("Media/Textures/tilesheet.png", sf::Vector2u(32, 32), level, 33, 10))
+        return;
+	
+	std::unique_ptr<Map> map(new Map(mMap.getVertices(), mMap.getTileSet()));
+	map->setPosition(0, mSpawnPosition.y + 29.f);
+	mSceneLayers[UpperAir]->attachChild(std::move(map));
 
 	// // Add particle node to the scene
 	// std::unique_ptr<ParticleNode> smokeNode(new ParticleNode(Particle::Smoke, mTextures));

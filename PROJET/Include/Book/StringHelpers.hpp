@@ -9,4 +9,4 @@ template <typename T>
 std::string toString(const T& value);
 
 #include "StringHelpers.inl"
-#endif // BOOK_STRINGHELPERS_HPP
+#endif // STRINGHELPERS_HPP

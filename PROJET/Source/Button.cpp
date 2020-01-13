@@ -31,7 +31,7 @@ void Button::setCallback(Callback callback)
 void Button::setText(const std::string& text)
 {
 	mText.setString(text);
-	mText.setColor(sf::Color::Black);
+	mText.setColor(sf::Color(50.f, 50.f, 50.f));
 	sf::FloatRect bounds = mText.getLocalBounds();
 	mText.setOrigin(std::floor(bounds.left + bounds.width / 2.f), std::floor(bounds.top + bounds.height / 2.f));
 }

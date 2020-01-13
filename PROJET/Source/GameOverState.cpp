@@ -18,9 +18,9 @@ GameOverState::GameOverState(StateStack& stack, Context context)
 
 	mGameOverText.setFont(font);
 	if (context.player->getLevelStatus() == Player::LevelFailure)
-		mGameOverText.setString("Mission failed!");	
+		mGameOverText.setString("Level failed!");	
 	else
-		mGameOverText.setString("Mission successful!");
+		mGameOverText.setString("Level successful!");
 
 	mGameOverText.setCharacterSize(70);
 	centerOrigin(mGameOverText);
