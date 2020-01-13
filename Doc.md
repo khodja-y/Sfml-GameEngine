@@ -46,6 +46,11 @@ On boucle tant que l'interface est active puis on affiche le premier élément d
 - Classe Animation permettant de produire des animations à partir de sprites d'animations précalculées.
 
 ## Compilation
+Pour éxecuter il suffit de : <br>
+cd build <br>
+./PROJET/Source/PROJET <br>
+
+Pour compiler avec la bibliothèque SFML 2.5.1 installée il faut : <br>
 cd build <br>
 make <br>
 ./PROJET/Source/PROJET <br>
