@@ -40,6 +40,8 @@ PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Inclu
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Include/Book/StateIdentifiers.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Include/Book/StateStack.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Include/Book/TitleState.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Include/Book/Utility.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Include/Book/Utility.inl
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/../Include/Book/World.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o: ../PROJET/Source/Application.cpp
 

@@ -3,7 +3,7 @@
 #include <Book/State.hpp>
 #include <Book/StateIdentifiers.hpp>
 
-// #include <Book/Utility.hpp>
+#include <Book/Utility.hpp>
 #include <Book/TitleState.hpp>
 #include <Book/GameState.hpp>
 #include <Book/MenuState.hpp>
@@ -16,7 +16,7 @@
 const sf::Time Application::TimePerFrame = sf::seconds(1.f/60.f);
 
 Application::Application()
-: mWindow(sf::VideoMode(640, 480), "States", sf::Style::Default)
+: mWindow(sf::VideoMode(640, 480), "Hue", sf::Style::Default)
 , mTextures()
 , mFonts()
 , mPlayer()
@@ -32,14 +32,12 @@ Application::Application()
 	mFonts.load(Fonts::Main, "Media/Sansation.ttf");
 
 	mTextures.load(Textures::TitleScreen, 		"Media/Textures/TitleScreen.png");
-	mTextures.load(Textures::Buttons,			"Media/Textures/Buttons.png");
-	// mTextures.load(Textures::ButtonNormal,		"Media/Textures/ButtonNormal.png");
-	// mTextures.load(Textures::ButtonSelected,	"Media/Textures/ButtonSelected.png");
-	// mTextures.load(Textures::ButtonPressed,		"Media/Textures/ButtonPressed.png");
+	mTextures.load(Textures::Buttons,			"Media/Textures/buttons2.png");
+	
 
-	// mStatisticsText.setFont(mFonts.get(Fonts::Main));
-	// mStatisticsText.setPosition(5.f, 5.f);
-	// mStatisticsText.setCharacterSize(10u);
+	mStatisticsText.setFont(mFonts.get(Fonts::Main));
+	mStatisticsText.setPosition(5.f, 5.f);
+	mStatisticsText.setCharacterSize(10u);
 
 	registerStates();
 	mStateStack.pushState(States::Menu);
@@ -66,7 +64,7 @@ void Application::run()
 				mWindow.close();
 		}
 
-		// updateStatistics(dt);
+		updateStatistics(dt);
 		render();
 	}
 }
@@ -95,22 +93,22 @@ void Application::render()
 	mStateStack.draw();
 
 	mWindow.setView(mWindow.getDefaultView());
-	// mWindow.draw(mStatisticsText);
+	mWindow.draw(mStatisticsText);
 
 	mWindow.display();
 }
 
 void Application::updateStatistics(sf::Time dt)
 {
-	// mStatisticsUpdateTime += dt;
-	// mStatisticsNumFrames += 1;
-	// if (mStatisticsUpdateTime >= sf::seconds(1.0f))
-	// {
-	// 	mStatisticsText.setString("FPS: " + toString(mStatisticsNumFrames));
+	mStatisticsUpdateTime += dt;
+	mStatisticsNumFrames += 1;
+	if (mStatisticsUpdateTime >= sf::seconds(1.0f))
+	{
+		mStatisticsText.setString("FPS: " + toString(mStatisticsNumFrames));
 
-	// 	mStatisticsUpdateTime -= sf::seconds(1.0f);
-	// 	mStatisticsNumFrames = 0;
-	// }
+		mStatisticsUpdateTime -= sf::seconds(1.0f);
+		mStatisticsNumFrames = 0;
+	}
 }
 
 void Application::registerStates()

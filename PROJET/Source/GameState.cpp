@@ -30,12 +30,12 @@ bool GameState::update(sf::Time dt)
 
 	if (!mWorld.hasAlivePlayer())
 	{
-		// mPlayer.setMissionStatus(Player::MissionFailure);
+		mPlayer.setLevelStatus(Player::LevelFailure);
 		requestStackPush(States::GameOver);
 	}
 	else if (mWorld.hasPlayerReachedEnd())
 	{
-		// mPlayer.setMissionStatus(Player::MissionSuccess);
+		mPlayer.setLevelStatus(Player::LevelSuccess);
 		requestStackPush(States::GameOver);
 	}
 

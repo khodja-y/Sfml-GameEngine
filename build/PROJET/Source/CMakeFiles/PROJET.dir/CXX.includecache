@@ -275,6 +275,8 @@ Book/Animation.hpp
 -
 SFML/Graphics/Sprite.hpp
 -
+SFML/System/Time.hpp
+-
 
 ../PROJET/Source/../Include/Book/PostEffect.hpp
 SFML/System/NonCopyable.hpp
@@ -487,6 +489,8 @@ Book/State.hpp
 -
 Book/StateIdentifiers.hpp
 -
+Book/Utility.hpp
+-
 Book/TitleState.hpp
 -
 Book/GameState.hpp
@@ -616,6 +620,8 @@ SFML/Graphics/View.hpp
 Book/Map.hpp
 -
 SFML/Graphics/RenderTarget.hpp
+-
+SFML/Graphics/Sprite.hpp
 -
 
 /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/MenuState.cpp

@@ -31,6 +31,7 @@ void Button::setCallback(Callback callback)
 void Button::setText(const std::string& text)
 {
 	mText.setString(text);
+	mText.setColor(sf::Color::Black);
 	sf::FloatRect bounds = mText.getLocalBounds();
 	mText.setOrigin(std::floor(bounds.left + bounds.width / 2.f), std::floor(bounds.top + bounds.height / 2.f));
 }
@@ -104,7 +105,7 @@ void Button::draw(sf::RenderTarget& target, sf::RenderStates states) const
 
 void Button::changeTexture(Type buttonType)
 {
-	sf::IntRect textureRect(0, 50*buttonType, 200, 50);
+	sf::IntRect textureRect(0, 50*buttonType, 190, 50);
 	mSprite.setTextureRect(textureRect);
 }
 

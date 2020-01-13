@@ -41,6 +41,8 @@ PROJET/Source/CMakeFiles/PROJET.dir/Application.cpp.o
  ../PROJET/Source/../Include/Book/StateIdentifiers.hpp
  ../PROJET/Source/../Include/Book/StateStack.hpp
  ../PROJET/Source/../Include/Book/TitleState.hpp
+ ../PROJET/Source/../Include/Book/Utility.hpp
+ ../PROJET/Source/../Include/Book/Utility.inl
  ../PROJET/Source/../Include/Book/World.hpp
  /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/Application.cpp
 PROJET/Source/CMakeFiles/PROJET.dir/BloomEffect.cpp.o

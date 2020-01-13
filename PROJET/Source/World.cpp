@@ -21,7 +21,7 @@ World::World(sf::RenderTarget& outputTarget, FontHolder& fonts, SoundPlayer& sou
 , mSceneGraph()
 , mSceneLayers()
 , mWorldBounds(0.f, 0.f, 5000, mWorldView.getSize().y) // (x, y, width, height)
-, mSpawnPosition((mWorldView.getSize().x / 2.f) , mWorldBounds.height - mWorldView.getSize().y / 2.f)  
+, mSpawnPosition((mWorldView.getSize().x / 2.f) , mWorldView.getSize().y / 2.f)  
 , mScrollSpeed(-50.f)                        
 , mPlayerHue(nullptr)
 , mCommandQueue()
@@ -32,7 +32,6 @@ World::World(sf::RenderTarget& outputTarget, FontHolder& fonts, SoundPlayer& sou
     buildScene();
 
     mWorldView.setCenter(mSpawnPosition);
-    // mWorldView.setSize(320.f, 240.f);
 }
 
 
@@ -61,7 +60,7 @@ void World::update(sf::Time dt)
 	mSceneGraph.removeWrecks();
 
     mSceneGraph.update(dt, mCommandQueue);
-    adaptPlayerPosition();
+    //adaptPlayerPosition();
     adaptViewPosition();
         
 }
@@ -69,12 +68,12 @@ void World::update(sf::Time dt)
 void World::loadTextures()
 {
     // mTextures.load(Textures::Hue, "Media/Textures/player.png");
-    mTextures.load(Textures::Fond, "Media/Textures/Jungle.png");
+    mTextures.load(Textures::Fond, "Media/Textures/background_32.png");
     mTextures.load(Textures::Sol, "Media/Textures/b_scrollgrass1.png");
-	mTextures.load(Textures::Entities, "Media/Textures/player.png");
+	mTextures.load(Textures::Entities, "Media/Textures/png.png");
 	mTextures.load(Textures::ColorFill, "Media/Textures/color_circle.png");
 
-	mTextures.load(Textures::Explosion, "Media/Textures/player.png");
+	mTextures.load(Textures::Explosion, "Media/Textures/Explosion.png");
 	mTextures.load(Textures::Particle, "Media/Textures/Particle.png");
 }
 
@@ -102,6 +101,7 @@ void World::buildScene()
     //lier la texture du fond avec le noeud 
     std::unique_ptr<SpriteNode> backgroundSprite(new SpriteNode(texture, textureRect));
     backgroundSprite->setPosition(mWorldBounds.left, mWorldBounds.top);
+	backgroundSprite->setScale(4, 4);
     mSceneLayers[Background]->attachChild(std::move(backgroundSprite));
 
 
@@ -118,9 +118,10 @@ void World::buildScene()
 	
 
     std::unique_ptr<Pickup> color(new Pickup(Pickup::ColorFill, mTextures));
-    color->setPosition(mSpawnPosition.x + 200.f, mSpawnPosition.y + 140.f);
+    color->setPosition(mSpawnPosition.x + 600.f, mSpawnPosition.y + 140.f);
 	color->setScale(0.25, 0.25);
     mSceneLayers[UpperAir]->attachChild(std::move(color));
+
     
     
     std::unique_ptr<PlayerHue> leader(new PlayerHue(PlayerHue::Hue, mTextures));
@@ -130,25 +131,11 @@ void World::buildScene()
     mSceneLayers[UpperAir]->attachChild(std::move(leader));
 
 
-	const int level[] =
-    {
-        0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
-        0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
-        1, 1, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
-        0, 1, 0, 0, 2, 0, 3, 3, 3, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
-        0, 1, 1, 0, 3, 3, 3, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
-        0, 0, 1, 0, 3, 0, 2, 2, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
-        2, 0, 1, 0, 3, 0, 2, 2, 2, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
-        0, 0, 1, 0, 3, 2, 2, 2, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
-        0, 0, 1, 0, 3, 2, 2, 2, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 
-        0, 0, 1, 0, 3, 2, 2, 2, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2,
 
-    };
+    // if (!mMap.load("Media/Textures/tilesheet.png", sf::Vector2u(32, 32), level, 480, 50))
+    //     return;
 
-    if (!mMap.load("Media/Textures/tilesheet.png", sf::Vector2u(32, 32), level, 24, 20))
-        return;
-
-	std::unique_ptr<Map> map(new Map(mMap.getVertices(), mMap.getTileSet()));
+	// std::unique_ptr<Map> map(new Map(mMap.getVertices(), mMap.getTileSet()));
 	// mSceneLayers[UpperAir]->attachChild(std::move(map));
 
 	// // Add particle node to the scene
@@ -280,18 +267,7 @@ void World::handleCollisions()
 
 	for(SceneNode::Pair pair : collisionPairs)
 	{
-        // SI LE PLAYER TOUCHE UN ENNEMIE DIRECT
-		// if (matchesCategories(pair, Category::PlayerAircraft, Category::EnemyAircraft))
-		// {
-		// 	auto& player = static_cast<Aircraft&>(*pair.first);
-		// 	auto& enemy = static_cast<Aircraft&>(*pair.second);
-
-		// 	// Collision: Player damage = enemy's remaining HP
-		// 	player.damage(enemy.getHitpoints());
-		// 	enemy.destroy();
-		// }
-
-		// else 
+        
         if (matchesCategories(pair, Category::PlayerHue, Category::Pickup))
 		{
 			auto& player = static_cast<PlayerHue&>(*pair.first);
@@ -303,17 +279,7 @@ void World::handleCollisions()
 
 		}
 
-        // SI LE PLAYER TOUCHE UN PROJECTILE ENNEMIE OU QU'UN ENNEMIE TOUCHE UN PROJECTILE ALLIÉ
-		// else if (matchesCategories(pair, Category::EnemyAircraft, Category::AlliedProjectile)
-		// 	  || matchesCategories(pair, Category::PlayerAircraft, Category::EnemyProjectile))
-		// {
-		// 	auto& aircraft = static_cast<Aircraft&>(*pair.first);
-		// 	auto& projectile = static_cast<Projectile&>(*pair.second);
-
-		// 	// Apply projectile damage to aircraft, destroy projectile
-		// 	aircraft.damage(projectile.getDamage());
-		// 	projectile.destroy();
-		// }
+        
 	}
 }
 

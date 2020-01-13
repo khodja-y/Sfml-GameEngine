@@ -7,6 +7,7 @@
 #include <Book/Animation.hpp>
 
 #include <SFML/Graphics/Sprite.hpp>
+#include <SFML/System/Time.hpp>
 
 
 class PlayerHue : public Entity
@@ -23,7 +24,7 @@ class PlayerHue : public Entity
                         PlayerHue(Type type, const TextureHolder& textures);
                         PlayerHue();
                         ~PlayerHue();
-        void            jump();
+        void            jump(sf::Time dt);
         
         
 
@@ -52,6 +53,8 @@ class PlayerHue : public Entity
         bool            mShowMort;
 
         bool            mOnGround;
+        float           gravity = 9.81;
+        int             jumpCount = 0;
 
         Animation       mMarche;
         Animation       mMort;

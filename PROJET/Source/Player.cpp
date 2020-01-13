@@ -95,7 +95,7 @@ void Player::initializeActions()
 
 	mActionBinding[MoveLeft].action    	 = derivedAction<PlayerHue>([playerSpeed] (PlayerHue& h, sf::Time){ h.marcher(-playerSpeed);});
 	mActionBinding[MoveRight].action     = derivedAction<PlayerHue>([playerSpeed] (PlayerHue& h, sf::Time){ h.marcher(playerSpeed);});
-	mActionBinding[Jump].action    	 	 = derivedAction<PlayerHue>([] (PlayerHue& h, sf::Time){ h.jump();});
+	mActionBinding[Jump].action    	 	 = derivedAction<PlayerHue>([] (PlayerHue& h, sf::Time dt){ h.jump(dt);});
 }
 
 bool Player::isRealtimeAction(Action action)

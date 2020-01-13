@@ -1,6 +1,7 @@
 #include <Book/Map.hpp>
 
 #include <SFML/Graphics/RenderTarget.hpp>
+#include <SFML/Graphics/Sprite.hpp>
 
 Map::Map(){
 
@@ -80,6 +81,8 @@ void Map::draw(sf::RenderTarget& target, sf::RenderStates states) const
     // apply the tileset texture
     states.texture = &m_tileset;
 
+    sf::Sprite sp;
+    
 
     // draw the vertex array
     target.draw(m_vertices, states);
