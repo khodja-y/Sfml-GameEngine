@@ -6,7 +6,7 @@ On boucle tant que l'interface est active puis on affiche le premier élément d
 - Classes : Application
 
 ## Diagramme à état de l'UI:
-- Classes: State, StateStack (pile des état), StateIdentifiers (enum pour différencier les état), MenuState (Affichage du menu), LoadingState (chargement des ressources), GameState (lancement de la partie), GameOverState (retour au menu à la fin du jeu), PauseState (mise du jeu en pause), SettingsState (affichage des paramètres) , TitleState (affichage de l'écran d'accueil).
+- Classes: State, StateStack (pile des état), StateIdentifiers (enum pour différencier les état), MenuState (Affichage du menu), LoadingState (chargement des ressources), GameState (lancement de la partie), GameOverState (retour au menu à la fin du jeu), PauseState (mise du jeu en pause), SettingsState (affichage des paramètres) , TitleState (affichage de l'écran d'accueil). <br>
 
 ![40% center](Rapport/FSM_States.png)
 
@@ -46,13 +46,13 @@ On boucle tant que l'interface est active puis on affiche le premier élément d
 - Classe Animation permettant de produire des animations à partir de sprites d'animations précalculées.
 
 ## Compilation
-cd build
-make 
-./PROJET/Source/PROJET
+cd build <br>
+make <br>
+./PROJET/Source/PROJET <br>
 
-Ou alors il faut installer la bibliothèque SFML 2.5.1 puis:
-mkdir build
-cd build
-cmake ..
-make
+Ou alors il faut installer la bibliothèque SFML 2.5.1 puis: <br>
+mkdir build <br>
+cd build <br>
+cmake .. <br>
+make <br>
 ./PROJET/Source/PROJET
