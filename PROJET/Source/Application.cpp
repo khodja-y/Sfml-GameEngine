@@ -16,7 +16,7 @@
 const sf::Time Application::TimePerFrame = sf::seconds(1.f/60.f);
 
 Application::Application()
-: mWindow(sf::VideoMode(640, 480), "Hue", sf::Style::Default)
+: mWindow(sf::VideoMode(640, 480), "Hue -2.0", sf::Style::Default)
 , mTextures()
 , mFonts()
 , mPlayer()

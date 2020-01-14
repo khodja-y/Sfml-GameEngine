@@ -24,7 +24,7 @@ MenuState::MenuState(StateStack& stack, Context context)
     playButton->setCallback([this] ()
     {
         requestStackPop();
-        requestStackPush(States::Game);
+        requestStackPush(States::Loading);
     });
 
 

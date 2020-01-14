@@ -29,10 +29,11 @@ PlayerHue::PlayerHue(Type type, const TextureHolder& textures)
 , mSprite(textures.get(Table[type].texture), Table[type].textureRect)
 , mMort(textures.get(Textures::Explosion))
 , mMarche(textures.get(Textures::Hue))
-, mShowMort(true)
 , mOnGround(true)
 , mPlayedDeathSound(false)
 {
+	mShowMort = true;
+
     mMarche.setFrameSize(sf::Vector2i(50,60));
     mMarche.setNumFrames(7);
     mMarche.setDuration(sf::seconds(2));
@@ -43,6 +44,7 @@ PlayerHue::PlayerHue(Type type, const TextureHolder& textures)
 	mMort.setScale(0.5,0.5);
 
     centerOrigin(mMort);
+	
 
 	centerOrigin(mMarche);
 
@@ -53,9 +55,12 @@ PlayerHue::PlayerHue(Type type, const TextureHolder& textures)
     mSprite.setOrigin(bounds.width / 2.f, bounds.height / 2.f);
 	mSprite.setScale(5,5);
 
-	// std::unique_ptr<EmitterNode> smoke(new EmitterNode(Particle::Smoke));
-	// smoke->setPosition(0.f, getBoundingRect().height / 2.f);
-	// attachChild(std::move(smoke));
+
+
+	std::unique_ptr<EmitterNode> smoke(new EmitterNode(Particle::Propellant));
+	smoke->setPosition(0.f, getBoundingRect().height / 2.f);
+	attachChild(std::move(smoke));
+
 }
 
 void PlayerHue::drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const
@@ -71,6 +76,7 @@ void PlayerHue::drawCurrent(sf::RenderTarget& target, sf::RenderStates states) c
 
 void PlayerHue::updateCurrent(sf::Time dt, CommandQueue& commands)
 {
+
 	sf::Vector2f position = getPosition();
 	float force = 5 * gravity * dt.asSeconds();
 	setPosition(position.x, position.y - force * dt.asSeconds());
@@ -84,25 +90,6 @@ void PlayerHue::updateCurrent(sf::Time dt, CommandQueue& commands)
 	}	
 	updateMarcheAnimation();
 
-	// if(Table[mType].hasMarcheAnimation)
-	// {
-	// 	// Roll left: Texture rect offset once
-	// 	if (getVelocity().x < 0.f){
-	// 		SoundEffect::ID soundEffect = SoundEffect::Pas;
-	// 		playLocalSound(commands, soundEffect);
-	// 	}
-
-	// 	// Roll right: Texture rect offset twice
-	// 	else if (getVelocity().x > 0.f){
-	// 		SoundEffect::ID soundEffect = SoundEffect::Pas;
-	// 		playLocalSound(commands, soundEffect);
-	// 	}
-		
-	
-	// }
-	
-
-	mPlayedDeathSound = true;
 
 
 	if (isDestroyed())

@@ -110,11 +110,12 @@ void World::buildScene()
     terre.setRepeated(true);
 	
 
-    // std::unique_ptr<SpriteNode> solSprite(new SpriteNode(terre, terreRect));
-    // solSprite->setPosition(0.f, mSpawnPosition.y + 200.f);
-    // mSceneLayers[UpperAir]->attachChild(std::move(solSprite));
 
-
+	std::unique_ptr<PlayerHue> leader(new PlayerHue(PlayerHue::Hue, mTextures));
+    mPlayerHue = leader.get();
+    mPlayerHue->setPosition(mSpawnPosition.x, mSpawnPosition.y + 140.f);
+    mPlayerHue->setVelocity(0.f, 0.f);
+    mSceneLayers[UpperAir]->attachChild(std::move(leader));
 	
 
     std::unique_ptr<Pickup> color(new Pickup(Pickup::ColorFill, mTextures));
@@ -124,11 +125,7 @@ void World::buildScene()
 
     
     
-    std::unique_ptr<PlayerHue> leader(new PlayerHue(PlayerHue::Hue, mTextures));
-    mPlayerHue = leader.get();
-    mPlayerHue->setPosition(mSpawnPosition.x, mSpawnPosition.y + 140.f);
-    mPlayerHue->setVelocity(0.f, 0.f);
-    mSceneLayers[UpperAir]->attachChild(std::move(leader));
+    
 
 	const int level[] =
     {
@@ -151,13 +148,13 @@ void World::buildScene()
 	map->setPosition(0, mSpawnPosition.y + 29.f);
 	mSceneLayers[UpperAir]->attachChild(std::move(map));
 
-	// // Add particle node to the scene
-	// std::unique_ptr<ParticleNode> smokeNode(new ParticleNode(Particle::Smoke, mTextures));
-	// mSceneLayers[LowerAir]->attachChild(std::move(smokeNode));
+	// Add particle node to the scene
+	std::unique_ptr<ParticleNode> smokeNode(new ParticleNode(Particle::Smoke, mTextures));
+	mSceneLayers[LowerAir]->attachChild(std::move(smokeNode));
 
 	// Add propellant particle node to the scene
-	// std::unique_ptr<ParticleNode> propellantNode(new ParticleNode(Particle::Propellant, mTextures));
-	// mSceneLayers[LowerAir]->attachChild(std::move(propellantNode));
+	std::unique_ptr<ParticleNode> propellantNode(new ParticleNode(Particle::Propellant, mTextures));
+	mSceneLayers[LowerAir]->attachChild(std::move(propellantNode));
 
 	// Add sound effect node
 	std::unique_ptr<SoundNode> soundNode(new SoundNode(mSounds));
