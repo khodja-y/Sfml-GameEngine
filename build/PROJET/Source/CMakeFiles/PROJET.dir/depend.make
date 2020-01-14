@@ -257,6 +257,7 @@ PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o: ../PROJET/Source/../Include
 PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o: ../PROJET/Source/../Include/Book/ResourceHolder.inl
 PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o: ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o: ../PROJET/Source/../Include/Book/SceneNode.hpp
+PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o: ../PROJET/Source/../Include/Book/SoundNode.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o: ../PROJET/Source/../Include/Book/Utility.hpp
 PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o: ../PROJET/Source/../Include/Book/Utility.inl
 PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o: ../PROJET/Source/PlayerHue.cpp

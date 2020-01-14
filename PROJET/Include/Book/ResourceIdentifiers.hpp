@@ -63,7 +63,8 @@ namespace SoundEffect
 {
 	enum ID
 	{
-		
+		Pas,
+		Dead,
 		CollectPickup,
 		Button,
 	};

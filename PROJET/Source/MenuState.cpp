@@ -52,7 +52,7 @@ MenuState::MenuState(StateStack& stack, Context context)
     
     
     //play menu music 
-    context.music->setVolume(10.f);
+    context.music->setVolume(100.f);
     context.music->play(Music::MenuTheme);
     
     

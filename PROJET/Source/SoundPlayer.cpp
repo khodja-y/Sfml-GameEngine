@@ -21,6 +21,8 @@ SoundPlayer::SoundPlayer()
 {
 	
 	mSoundBuffers.load(SoundEffect::Button,			"Media/Sound/switch1.wav");
+	mSoundBuffers.load(SoundEffect::Dead, 			"Media/Sound/Choc.wav");
+	mSoundBuffers.load(SoundEffect::Pas,			"Media/Sound/pas.wav");
 
 	// Listener points towards the screen (default in SFML)
 	sf::Listener::setDirection(0.f, 0.f, -1.f);

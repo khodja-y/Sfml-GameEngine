@@ -258,6 +258,7 @@ PROJET/Source/CMakeFiles/PROJET.dir/PlayerHue.cpp.o
  ../PROJET/Source/../Include/Book/ResourceHolder.inl
  ../PROJET/Source/../Include/Book/ResourceIdentifiers.hpp
  ../PROJET/Source/../Include/Book/SceneNode.hpp
+ ../PROJET/Source/../Include/Book/SoundNode.hpp
  ../PROJET/Source/../Include/Book/Utility.hpp
  ../PROJET/Source/../Include/Book/Utility.inl
  /home/yasmine/Bureau/Sfml-GameEngine-Hue/PROJET/Source/PlayerHue.cpp

@@ -31,7 +31,7 @@ Application::Application()
 
 	mFonts.load(Fonts::Main, "Media/ArnoldBoecklinStd.ttf");
 
-	mTextures.load(Textures::TitleScreen, 		"Media/Textures/TitleScreen.png");
+	mTextures.load(Textures::TitleScreen, 		"Media/Textures/menu.jpg");
 	mTextures.load(Textures::Buttons,			"Media/Textures/buttons2.png");
 	
 
@@ -40,7 +40,7 @@ Application::Application()
 	mStatisticsText.setCharacterSize(10u);
 
 	registerStates();
-	mStateStack.pushState(States::Menu);
+	mStateStack.pushState(States::Title);
 }
 
 void Application::run()

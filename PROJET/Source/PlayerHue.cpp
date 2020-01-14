@@ -4,6 +4,7 @@
 #include <Book/DataTables.hpp>
 #include <Book/Utility.hpp>
 #include <Book/EmitterNode.hpp>
+#include <Book/SoundNode.hpp>
 
 #include <SFML/Graphics/RenderTarget.hpp>
 #include <SFML/Graphics/RenderStates.hpp>
@@ -30,6 +31,7 @@ PlayerHue::PlayerHue(Type type, const TextureHolder& textures)
 , mMarche(textures.get(Textures::Hue))
 , mShowMort(true)
 , mOnGround(true)
+, mPlayedDeathSound(false)
 {
     mMarche.setFrameSize(sf::Vector2i(50,60));
     mMarche.setNumFrames(7);
@@ -82,9 +84,37 @@ void PlayerHue::updateCurrent(sf::Time dt, CommandQueue& commands)
 	}	
 	updateMarcheAnimation();
 
+	// if(Table[mType].hasMarcheAnimation)
+	// {
+	// 	// Roll left: Texture rect offset once
+	// 	if (getVelocity().x < 0.f){
+	// 		SoundEffect::ID soundEffect = SoundEffect::Pas;
+	// 		playLocalSound(commands, soundEffect);
+	// 	}
+
+	// 	// Roll right: Texture rect offset twice
+	// 	else if (getVelocity().x > 0.f){
+	// 		SoundEffect::ID soundEffect = SoundEffect::Pas;
+	// 		playLocalSound(commands, soundEffect);
+	// 	}
+		
+	
+	// }
+	
+
+	mPlayedDeathSound = true;
+
 
 	if (isDestroyed())
 	{
+		if (!mPlayedDeathSound)
+		{
+			SoundEffect::ID soundEffect = SoundEffect::Dead;
+			playLocalSound(commands, soundEffect);
+			
+
+			mPlayedDeathSound = true;
+		}
 		mMort.update(dt);
 		return;
 	}
@@ -122,6 +152,7 @@ sf::FloatRect PlayerHue::getBoundingRect() const
 
 void PlayerHue::updateMarcheAnimation()
 {
+	
 	if (Table[mType].hasMarcheAnimation)
 	{
 		sf::IntRect textureRect = Table[mType].textureRect;
@@ -140,6 +171,7 @@ void PlayerHue::updateMarcheAnimation()
 
 bool PlayerHue::isMarkedForRemoval() const
 {
+
 	return isDestroyed() && (mMort.isFinished() || !mShowMort);
 }
 
@@ -147,6 +179,21 @@ void PlayerHue::remove()
 {
 	Entity::remove();
 	mShowMort = false;
+}
+
+void PlayerHue::playLocalSound(CommandQueue& commands, SoundEffect::ID effect)
+{
+	sf::Vector2f worldPosition = getWorldPosition();
+	
+	Command command;
+	command.category = Category::SoundEffect;
+	command.action = derivedAction<SoundNode>(
+		[effect, worldPosition] (SoundNode& node, sf::Time)
+		{
+			node.playSound(effect, worldPosition);
+		});
+
+	commands.push(command);
 }
 
 

@@ -719,6 +719,8 @@ Book/Utility.hpp
 -
 Book/EmitterNode.hpp
 -
+Book/SoundNode.hpp
+-
 SFML/Graphics/RenderTarget.hpp
 -
 SFML/Graphics/RenderStates.hpp

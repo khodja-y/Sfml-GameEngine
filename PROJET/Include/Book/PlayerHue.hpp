@@ -37,6 +37,8 @@ class PlayerHue : public Entity
         virtual void            remove();
         virtual bool 			isMarkedForRemoval() const;
 
+        void					playLocalSound(CommandQueue& commands, SoundEffect::ID effect);
+
     private:
 
         virtual void            drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const;
@@ -58,6 +60,8 @@ class PlayerHue : public Entity
 
         Animation       mMarche;
         Animation       mMort;
+
+        bool            mPlayedDeathSound;
 
 };
 
